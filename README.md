@@ -1,26 +1,54 @@
 <!-- ================================================================= -->
-<!-- 1. HEADER BANNER                                                  -->
+<!-- 1. CYBERPUNK SYSTEMS HEADER BANNER                                -->
 <!-- ================================================================= -->
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=200&section=header&text=Bhargav&fontSize=64&fontColor=ffffff&animation=fadeIn&fontAlignY=40&desc=Systems%20and%20AI%20Infrastructure%20Engineer&descFontSize=19&descColor=38bdf8&descAlignY=65&descAlign=50" width="100%" alt="Header Banner" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=220&section=header&text=Bhargav&fontSize=70&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Systems%20%E2%80%A2%20Baremetal%20AI%20%E2%80%A2%20Distributed%20Infra&descFontSize=20&descColor=38bdf8&descAlignY=62&descAlign=50" width="100%" alt="Header Banner" />
 </div>
 
-<!-- ================================================================= -->
-<!-- 2. IDENTITY LINE & TAGLINE                                        -->
-<!-- ================================================================= -->
+<div align="center">
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=2800&pause=1000&color=38BDF8&center=true&vCenter=true&multiline=false&width=650&height=40&lines=Building+baremetal+LLM+inference+engines+in+C99;Contributing+to+Microsoft+OpenVMM+%26+OCI+Container+Runtimes;Designing+Raft-consensus+distributed+key-value+stores;Executing+fused+integer+GEMV+on+AVX-512+and+NEON" alt="Typing SVG" />
+  </a>
+</div>
 
 <div align="center">
   <p>
-    <code>I write the software that runs closer to the metal than most people are comfortable with.</code>
+    <code>⚡ [STATUS: ONLINE] // Core: Linux x86_64 // Dialect: C99 / Rust / C++20 // Mode: Maximum Mechanical Sympathy</code>
   </p>
 </div>
 
 <br/>
 
 <!-- ================================================================= -->
-<!-- 3. SYSINFO.C CODE BLOCK                                           -->
+<!-- 2. CONTRIBUTION SNAKE GAME (3D ANIMATED)                          -->
 <!-- ================================================================= -->
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/bharqav/bharqav/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bharqav/bharqav/output/github-contribution-grid-snake.svg">
+    <img alt="GitHub Contribution Snake Animation" src="https://raw.githubusercontent.com/bharqav/bharqav/output/github-contribution-grid-snake-dark.svg" width="100%" />
+  </picture>
+</div>
+
+<br/>
+
+<!-- ================================================================= -->
+<!-- 3. GLASSPHORE TERMINAL INTERACTIVE HUD                            -->
+<!-- ================================================================= -->
+
+<div align="center">
+  <table>
+    <tr>
+      <td width="850" style="background-color: #0d1117; border: 1px solid #1e293b; border-radius: 8px;">
+        <div style="padding: 8px 12px; border-bottom: 1px solid #1e293b; font-family: monospace; font-size: 13px; color: #94a3b8;">
+          🔴 &nbsp; 🟡 &nbsp; 🟢 &nbsp; &nbsp; <b>bharqav@workstation: ~ (x86_64 / baremetal)</b>
+        </div>
+      </td>
+    </tr>
+  </table>
+</div>
 
 ```c
 /**
@@ -61,7 +89,17 @@ int main(void) {
 <br/>
 
 <!-- ================================================================= -->
-<!-- 4. OPEN SOURCE CONTRIBUTIONS                                      -->
+<!-- 4. GITHUB TROPHIES / ACHIEVEMENTS GRID                            -->
+<!-- ================================================================= -->
+
+<div align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=bharqav&theme=onedark&no-frame=true&margin-w=15&row=1&column=6" width="100%" alt="GitHub Trophies" />
+</div>
+
+<br/>
+
+<!-- ================================================================= -->
+<!-- 5. OPEN SOURCE CONTRIBUTIONS CASE STUDIES                         -->
 <!-- ================================================================= -->
 
 ### 🌐 Open Source Contributions
@@ -70,7 +108,7 @@ int main(void) {
   <tr>
     <td width="50%" valign="top">
       <h4>🛡️ <a href="https://github.com/crucible-security/crucible">Crucible Security</a>: Tool Injection Assessment Module</h4>
-      <p><code>PR #64</code> (Issue #49) | <b>AI Security Framework</b></p>
+      <p><code>PR #64</code> (Issue #49) | <b>AI Red-Teaming & Security</b></p>
       <ul>
         <li>Built an adversarial attack engine covering <b>OWASP AGENT-004 (Tool Misuse)</b> across MCP and tool-augmented agents.</li>
         <li>Implemented 4 attack classes and 20 adversarial vectors simulating privilege escalation, prompt-to-tool manipulation, and system prompt override attacks across <b>286+ passing tests</b>.</li>
@@ -125,7 +163,7 @@ int main(void) {
 <br/>
 
 <!-- ================================================================= -->
-<!-- 5. FEATURED SYSTEMS                                               -->
+<!-- 6. FEATURED SYSTEMS ARCHITECTURE SHOWCASE                         -->
 <!-- ================================================================= -->
 
 ### 🛠️ Featured Systems
@@ -196,7 +234,7 @@ int main(void) {
 <br/>
 
 <!-- ================================================================= -->
-<!-- 6. TECH STACK (SKILLICONS)                                        -->
+<!-- 7. CORE TECHNICAL ARSENAL                                         -->
 <!-- ================================================================= -->
 
 ### ⚙️ Core Technical Arsenal
@@ -228,7 +266,7 @@ int main(void) {
 <br/>
 
 <!-- ================================================================= -->
-<!-- 7. ENGINEERING METRICS & LIVE STATS                               -->
+<!-- 8. ENGINEERING TELEMETRY & METRICS                                -->
 <!-- ================================================================= -->
 
 ### 📊 Engineering Metrics
@@ -258,7 +296,7 @@ int main(void) {
 <br/>
 
 <!-- ================================================================= -->
-<!-- 8. CURRENTLY DEEP-DIVING INTO                                     -->
+<!-- 9. CURRENTLY DEEP-DIVING INTO                                     -->
 <!-- ================================================================= -->
 
 ### 🔬 Currently Deep-Diving Into
@@ -270,7 +308,7 @@ int main(void) {
 <br/>
 
 <!-- ================================================================= -->
-<!-- 9. CONTACT & CONNECT                                              -->
+<!-- 10. FOOTER & CONNECT                                              -->
 <!-- ================================================================= -->
 
 <div align="center">
@@ -288,10 +326,6 @@ int main(void) {
 </div>
 
 <br/>
-
-<!-- ================================================================= -->
-<!-- 10. FOOTER BANNER                                                 -->
-<!-- ================================================================= -->
 
 <div align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0d1117&height=70&section=footer" width="100%" alt="Footer Banner" />
