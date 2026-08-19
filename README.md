@@ -1,20 +1,20 @@
 <!-- ================================================================= -->
-<!-- 1. LIVE ANIMATED SOLAR SYSTEM & ORBITAL TELEMETRY SVG             -->
+<!-- 1. SPACE THEMED ANIMATED PROFILE HEADER                           -->
 <!-- ================================================================= -->
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/bharqav/bharqav/main/assets/solar_system.svg" width="100%" alt="Orbital Solar System Telemetry HUD" />
+  <img src="https://raw.githubusercontent.com/bharqav/bharqav/main/assets/header.svg" width="100%" alt="Space Profile Header" />
 </div>
 
 <div align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=2800&pause=1000&color=38BDF8&center=true&vCenter=true&multiline=false&width=700&height=40&lines=Navigating+deep-space+baremetal+LLM+runtimes+in+C99;Patching+VirtIO+hypervisor+transports+on+Microsoft+OpenVMM;Engineering+Raft-consensus+distributed+state+machines;Executing+fused+integer+GEMV+with+zero+hot-path+allocations" alt="Mission Control Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=2800&pause=1000&color=38BDF8&center=true&vCenter=true&multiline=false&width=700&height=40&lines=Building+baremetal+quantized+LLM+runtimes+in+portable+C99;Patching+VirtIO+hypervisor+transports+on+Microsoft+OpenVMM;Engineering+Raft-consensus+distributed+state+machines;Executing+fused+integer+GEMV+with+zero+hot-path+allocations" alt="Mission Control Typing SVG" />
   </a>
 </div>
 
 <div align="center">
   <p>
-    <code>🚀 [MISSION: DEEP SPACE INFRASTRUCTURE] // APOGEE: 30B MoE // PERIGEE: 180MB RSS // WARP: AVX-512</code>
+    <code>⚡ [MISSION: DEEP SPACE INFRASTRUCTURE] // APOGEE: 30B MoE // PERIGEE: 180MB RSS // WARP: AVX-512</code>
   </p>
 </div>
 
@@ -251,10 +251,6 @@ int main(void) {
       </td>
     </tr>
   </table>
-</div>
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=bharqav&theme=tokyo-night&hide_border=true&bg_color=050811&color=38bdf8&line=0284c7&point=38bdf8" width="95%" alt="Orbital Activity Graph" />
 </div>
 
 <br/>
