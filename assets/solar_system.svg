@@ -1,0 +1,258 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="space-bg" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#0b1120" />
+      <stop offset="50%" stop-color="#050811" />
+      <stop offset="100%" stop-color="#020408" />
+    </radialGradient>
+
+    <!-- Sun Glow Gradient -->
+    <radialGradient id="sun-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="1" />
+      <stop offset="30%" stop-color="#0284c7" stop-opacity="0.8" />
+      <stop offset="70%" stop-color="#0369a1" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#0369a1" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Planet Gradients -->
+    <radialGradient id="planet-quantr" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#67e8f9" />
+      <stop offset="60%" stop-color="#06b6d4" />
+      <stop offset="100%" stop-color="#083344" />
+    </radialGradient>
+
+    <radialGradient id="planet-openvmm" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#818cf8" />
+      <stop offset="60%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </radialGradient>
+
+    <radialGradient id="planet-raft" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#f472b6" />
+      <stop offset="50%" stop-color="#c084fc" />
+      <stop offset="100%" stop-color="#3b0764" />
+    </radialGradient>
+
+    <radialGradient id="planet-mysh" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="60%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#022c22" />
+    </radialGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="subtle-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    /* CSS Keyframe Animations */
+    @keyframes orbit-1 {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes orbit-2 {
+      from { transform: rotate(45deg); }
+      to { transform: rotate(405deg); }
+    }
+    @keyframes orbit-3 {
+      from { transform: rotate(120deg); }
+      to { transform: rotate(480deg); }
+    }
+    @keyframes orbit-4 {
+      from { transform: rotate(230deg); }
+      to { transform: rotate(590deg); }
+    }
+    @keyframes pulse-sun {
+      0% { transform: scale(1); opacity: 0.9; }
+      50% { transform: scale(1.08); opacity: 1; filter: drop-shadow(0 0 16px #38bdf8); }
+      100% { transform: scale(1); opacity: 0.9; }
+    }
+    @keyframes twinkle {
+      0%, 100% { opacity: 0.2; transform: scale(0.8); }
+      50% { opacity: 1; transform: scale(1.3); }
+    }
+    @keyframes shooting-star {
+      0% { transform: translateX(0) translateY(0) scale(0.2); opacity: 0; }
+      10% { opacity: 1; }
+      30% { transform: translateX(350px) translateY(180px) scale(1); opacity: 0; }
+      100% { transform: translateX(350px) translateY(180px) scale(1); opacity: 0; }
+    }
+    @keyframes radar-sweep {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .orbit-1-track { animation: orbit-1 9s linear infinite; transform-origin: 450px 210px; }
+    .orbit-2-track { animation: orbit-2 16s linear infinite; transform-origin: 450px 210px; }
+    .orbit-3-track { animation: orbit-3 26s linear infinite; transform-origin: 450px 210px; }
+    .orbit-4-track { animation: orbit-4 38s linear infinite; transform-origin: 450px 210px; }
+
+    .sun-core { animation: pulse-sun 4s ease-in-out infinite; transform-origin: 450px 210px; }
+    
+    .star-1 { animation: twinkle 3s ease-in-out infinite; }
+    .star-2 { animation: twinkle 4.5s ease-in-out infinite 1s; }
+    .star-3 { animation: twinkle 2.2s ease-in-out infinite 0.5s; }
+    .star-4 { animation: twinkle 5s ease-in-out infinite 2s; }
+    
+    .meteor { animation: shooting-star 7s ease-in-out infinite; }
+    .meteor-2 { animation: shooting-star 11s ease-in-out infinite 4s; }
+
+    .hud-text { font-family: 'SF Mono', 'Fira Code', 'Courier New', monospace; font-size: 11px; fill: #64748b; letter-spacing: 1.5px; }
+    .hud-highlight { fill: #38bdf8; font-weight: bold; }
+  </style>
+
+  <!-- Void Canvas Background -->
+  <rect width="900" height="420" fill="url(#space-bg)" />
+
+  <!-- Starfield Matrix -->
+  <g fill="#ffffff">
+    <!-- Starfield group 1 -->
+    <circle cx="45" cy="45" r="1" class="star-1" />
+    <circle cx="120" cy="80" r="1.5" class="star-2" />
+    <circle cx="210" cy="35" r="0.8" class="star-3" />
+    <circle cx="340" cy="70" r="1.2" class="star-1" />
+    <circle cx="580" cy="40" r="1" class="star-4" />
+    <circle cx="690" cy="85" r="1.8" class="star-2" />
+    <circle cx="810" cy="30" r="0.9" class="star-3" />
+    <circle cx="860" cy="110" r="1.4" class="star-1" />
+
+    <circle cx="80" cy="190" r="1.2" class="star-4" />
+    <circle cx="160" cy="280" r="1.5" class="star-1" />
+    <circle cx="60" cy="360" r="0.9" class="star-2" />
+    <circle cx="250" cy="380" r="1.4" class="star-3" />
+    <circle cx="390" cy="360" r="1" class="star-1" />
+    <circle cx="520" cy="390" r="1.6" class="star-4" />
+    <circle cx="640" cy="350" r="0.8" class="star-2" />
+    <circle cx="750" cy="380" r="1.3" class="star-3" />
+    <circle cx="840" cy="290" r="1.1" class="star-1" />
+    <circle cx="880" cy="370" r="1.7" class="star-4" />
+    
+    <circle cx="780" cy="190" r="1" class="star-2" />
+    <circle cx="130" cy="130" r="0.8" class="star-3" />
+    <circle cx="720" cy="130" r="1.5" class="star-1" />
+  </g>
+
+  <!-- Shooting Stars -->
+  <g class="meteor" opacity="0">
+    <line x1="80" y1="20" x2="160" y2="60" stroke="#38bdf8" stroke-width="1.8" stroke-linecap="round"/>
+  </g>
+  <g class="meteor-2" opacity="0">
+    <line x1="550" y1="10" x2="640" y2="60" stroke="#a855f7" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- HUD Grid & Telemetry Overlay -->
+  <g opacity="0.6">
+    <!-- Outer Corners -->
+    <path d="M 30 50 L 30 30 L 50 30" fill="none" stroke="#1e293b" stroke-width="1.5" />
+    <path d="M 870 50 L 870 30 L 850 30" fill="none" stroke="#1e293b" stroke-width="1.5" />
+    <path d="M 30 370 L 30 390 L 50 390" fill="none" stroke="#1e293b" stroke-width="1.5" />
+    <path d="M 870 370 L 870 390 L 850 390" fill="none" stroke="#1e293b" stroke-width="1.5" />
+    
+    <!-- Crosshairs & Grid Lines -->
+    <line x1="450" y1="15" x2="450" y2="35" stroke="#1e293b" stroke-width="1" />
+    <line x1="450" y1="385" x2="450" y2="405" stroke="#1e293b" stroke-width="1" />
+    <line x1="15" y1="210" x2="35" y2="210" stroke="#1e293b" stroke-width="1" />
+    <line x1="865" y1="210" x2="885" y2="210" stroke="#1e293b" stroke-width="1" />
+  </g>
+
+  <!-- Telemetry HUD Text -->
+  <text x="45" y="55" class="hud-text">SYS.LOC: <tspan class="hud-highlight">SOLAR_SYSTEM // CORE_x86</tspan></text>
+  <text x="45" y="72" class="hud-text">TRAJECTORY: <tspan class="hud-highlight">BAREMETAL_INFERENCE</tspan></text>
+  <text x="45" y="89" class="hud-text">ENGINE_RSS: <tspan class="hud-highlight">180 MB FLOOR</tspan></text>
+
+  <text x="690" y="55" class="hud-text">ORBITAL_VELOCITY: <tspan class="hud-highlight">AVX-512 VNNI</tspan></text>
+  <text x="690" y="72" class="hud-text">WARP_STABILITY: <tspan class="hud-highlight">15/15 GATES [PASS]</tspan></text>
+  <text x="690" y="89" class="hud-text">TELEMETRY: <tspan class="hud-highlight">RAFT_SYNCED</tspan></text>
+
+  <!-- ORBITAL RINGS -->
+  <g fill="none" stroke-linecap="round" opacity="0.35">
+    <!-- Orbit 1: Quantr -->
+    <ellipse cx="450" cy="210" rx="95" ry="50" stroke="#0ea5e9" stroke-width="1" stroke-dasharray="4 6" />
+    <!-- Orbit 2: OpenVMM -->
+    <ellipse cx="450" cy="210" rx="160" ry="85" stroke="#6366f1" stroke-width="1" stroke-dasharray="6 8" />
+    <!-- Orbit 3: Distributed Raft -->
+    <ellipse cx="450" cy="210" rx="240" ry="125" stroke="#a855f7" stroke-width="1.2" stroke-dasharray="8 10" />
+    <!-- Orbit 4: POSIX mysh -->
+    <ellipse cx="450" cy="210" rx="330" ry="165" stroke="#10b981" stroke-width="1" stroke-dasharray="10 12" />
+  </g>
+
+  <!-- CENTRAL STAR: BHARGAV CORE -->
+  <g class="sun-core">
+    <!-- Outer Corona Glow -->
+    <circle cx="450" cy="210" r="42" fill="url(#sun-glow)" />
+    <!-- Core Star Sphere -->
+    <circle cx="450" cy="210" r="22" fill="#0284c7" filter="url(#glow)" />
+    <circle cx="450" cy="210" r="16" fill="#38bdf8" />
+    <circle cx="450" cy="210" r="9" fill="#ffffff" />
+  </g>
+  <text x="450" y="246" text-anchor="middle" font-family="'SF Mono', 'Fira Code', monospace" font-size="11" font-weight="bold" fill="#38bdf8" letter-spacing="2">BHARGAV // CORE</text>
+
+  <!-- PLANET 1: QUANTR-IN-C (Orbit 1) -->
+  <g class="orbit-1-track">
+    <g transform="translate(450, 210)">
+      <!-- Planet placement on ellipse -->
+      <g transform="translate(95, 0)">
+        <circle cx="0" cy="0" r="8" fill="url(#planet-quantr)" filter="url(#subtle-glow)" />
+        <!-- Planet Ring -->
+        <ellipse cx="0" cy="0" rx="13" ry="4" fill="none" stroke="#67e8f9" stroke-width="1" opacity="0.8" transform="rotate(-20)" />
+        <text x="14" y="4" font-family="'SF Mono', 'Fira Code', monospace" font-size="9" fill="#67e8f9" font-weight="bold">QUANTR-IN-C [LLM]</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- PLANET 2: OPENVMM (Orbit 2) -->
+  <g class="orbit-2-track">
+    <g transform="translate(450, 210)">
+      <g transform="translate(160, 0)">
+        <circle cx="0" cy="0" r="10" fill="url(#planet-openvmm)" filter="url(#subtle-glow)" />
+        <!-- Orbiting Tiny Moon -->
+        <circle cx="15" cy="-5" r="2.5" fill="#c7d2fe" />
+        <text x="14" y="14" font-family="'SF Mono', 'Fira Code', monospace" font-size="9" fill="#818cf8" font-weight="bold">OPENVMM [VirtIO]</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- PLANET 3: DISTRIBUTED RAFT KV (Orbit 3) -->
+  <g class="orbit-3-track">
+    <g transform="translate(450, 210)">
+      <g transform="translate(240, 0)">
+        <!-- Giant Planet with Rings -->
+        <circle cx="0" cy="0" r="14" fill="url(#planet-raft)" filter="url(#subtle-glow)" />
+        <ellipse cx="0" cy="0" rx="24" ry="7" fill="none" stroke="#f472b6" stroke-width="2" opacity="0.85" transform="rotate(-25)" />
+        <text x="22" y="-8" font-family="'SF Mono', 'Fira Code', monospace" font-size="9" fill="#f472b6" font-weight="bold">DISTRIBUTED-KV [RAFT]</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- PLANET 4: MYSH POSIX RUNTIME (Orbit 4) -->
+  <g class="orbit-4-track">
+    <g transform="translate(450, 210)">
+      <g transform="translate(330, 0)">
+        <circle cx="0" cy="0" r="9" fill="url(#planet-mysh)" filter="url(#subtle-glow)" />
+        <!-- Satellite / Probe Antenna -->
+        <line x1="0" y1="0" x2="-8" y2="-8" stroke="#34d399" stroke-width="1.2" />
+        <circle cx="-9" cy="-9" r="1.8" fill="#a7f3d0" />
+        <text x="14" y="4" font-family="'SF Mono', 'Fira Code', monospace" font-size="9" fill="#34d399" font-weight="bold">MYSH [POSIX SHELL]</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Bottom Coordinate Telemetry -->
+  <text x="450" y="395" text-anchor="middle" class="hud-text">
+    [RA: 18h 45m 02s] &nbsp;•&nbsp; [DEC: +04° 22' 18"] &nbsp;•&nbsp; [SYS: LINUX_KERNEL_x86_64] &nbsp;•&nbsp; [CLOCK: ATOMIC_HLC]
+  </text>
+</svg>
