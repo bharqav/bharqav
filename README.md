@@ -8,7 +8,7 @@
 
 <div align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=2800&pause=1000&color=38BDF8&center=true&vCenter=true&multiline=false&width=700&height=40&lines=Building+baremetal+quantized+LLM+runtimes+in+portable+C99;Patching+VirtIO+hypervisor+transports+on+Microsoft+OpenVMM;Engineering+Raft-consensus+distributed+state+machines;Executing+fused+integer+GEMV+with+zero+hot-path+allocations" alt="Mission Control Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=2800&pause=1000&color=22D3EE&center=true&vCenter=true&multiline=false&width=700&height=40&lines=Building+baremetal+quantized+LLM+runtimes+in+portable+C99;Patching+VirtIO+hypervisor+transports+on+Microsoft+OpenVMM;Engineering+Raft-consensus+distributed+state+machines;Executing+fused+integer+GEMV+with+zero+hot-path+allocations" alt="Mission Control Typing SVG" />
   </a>
 </div>
 
@@ -230,51 +230,25 @@ int main(void) {
 <br/>
 
 <!-- ================================================================= -->
-<!-- 6. MISSION CONTROL TELEMETRY HUD                                  -->
-<!-- ================================================================= -->
-
-### 📊 Mission Control Telemetry HUD
-
-<div align="center">
-  <table border="0">
-    <tr>
-      <td>
-        <img src="https://github-readme-stats.vercel.app/api?username=bharqav&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&bg_color=050811&title_color=38bdf8&icon_color=38bdf8&text_color=94a3b8" width="410" alt="Telemetry Stats" />
-      </td>
-      <td>
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=bharqav&theme=tokyonight&hide_border=true&background=050811&ring=38bdf8&fire=38bdf8&currStreakLabel=38bdf8&sideLabels=94a3b8&dates=64748b" width="380" alt="Orbital Streak" />
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2" align="center">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bharqav&layout=compact&theme=tokyonight&hide_border=true&bg_color=050811&title_color=38bdf8&text_color=94a3b8&langs_count=8" width="500" alt="Language Distribution" />
-      </td>
-    </tr>
-  </table>
-</div>
-
-<br/>
-
-<!-- ================================================================= -->
-<!-- 7. SUB-SPACE COMMUNICATIONS (CONTACT)                             -->
+<!-- 6. SUB-SPACE COMMUNICATIONS (CONTACT & SOCIALS)                   -->
 <!-- ================================================================= -->
 
 <div align="center">
-  <a href="https://linkedin.com/in/bhargavpodapati">
-    <img src="https://img.shields.io/badge/Sub--Space_LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  <a href="https://www.linkedin.com/in/podapatibhargav">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   &nbsp;
   <a href="mailto:bhargavpodapati28@gmail.com">
-    <img src="https://img.shields.io/badge/Quantum_Relay_Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
   &nbsp;
   <a href="https://github.com/bharqav">
-    <img src="https://img.shields.io/badge/Terminal_GitHub-050811?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+    <img src="https://img.shields.io/badge/GitHub-081018?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=050811&height=70&section=footer" width="100%" alt="Footer Banner" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=081018&height=70&section=footer" width="100%" alt="Footer Banner" />
 </div>
