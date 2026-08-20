@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0A0E14,100:1A2740&height=230&section=header&text=BHARGAV&fontSize=68&fontColor=00D9FF&animation=fadeIn&fontAlignY=38&desc=Systems%20%26%20AI%20Infrastructure%20Engineer&descAlignY=58&descSize=20&descColor=8B9BB4" width="100%"/>
+<img src="assets/header.svg" width="100%" alt="Bhargav - Systems and AI Infrastructure Engineer" />
 
 <a href="https://github.com/bharqav">
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&duration=3200&pause=1200&color=00D9FF&center=true&vCenter=true&width=760&height=50&lines=I+write+code+that+runs+closer+to+the+metal+than+most+are+comfortable+with.;Zero-dependency+quantized+LLM+inference+in+portable+C99.;Raft+consensus.+VirtIO+drivers.+Lock-free+ring+buffers.;Currently%3A+30B+MoE+models+at+sub-200MB+peak+RSS." />
