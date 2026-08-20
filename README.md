@@ -63,7 +63,7 @@ int main(void) {
 <tr>
 <td width="50%" valign="top">
 
-**Crucible Security** — Tool Injection Assessment Module
+**Crucible Security** — Tool Injection Assessment Module<br/>
 `PR #64` · `Issue #49`
 
 Built an adversarial attack engine covering OWASP AGENT-004 across MCP and tool-augmented agents. Four attack classes, twenty adversarial vectors, 286+ passing tests with dynamic attack registration.
@@ -73,7 +73,7 @@ Built an adversarial attack engine covering OWASP AGENT-004 across MCP and tool-
 </td>
 <td width="50%" valign="top">
 
-**Crucible Security** — CI/CD Security Gating
+**Crucible Security** — CI/CD Security Gating<br/>
 `PR #64` · `Issue #52`
 
 Built a `--fail-on` severity threshold flag that blocks CI pipelines on HIGH/CRITICAL findings. Shipped reusable GitHub Actions templates for automated agent vulnerability scanning.
@@ -85,7 +85,7 @@ Built a `--fail-on` severity threshold flag that blocks CI pipelines on HIGH/CRI
 <tr>
 <td width="50%" valign="top">
 
-**Microsoft OpenVMM** — VirtIO Interrupt Fix
+**Microsoft OpenVMM** — VirtIO Interrupt Fix<br/>
 `PR #4226`
 
 Found and fixed a spurious config-change interrupt during the DRIVER_OK transition. Audited INTx/MSI-X/MMIO interrupt paths across transports and corrected `config_generation` increment behavior.
@@ -95,7 +95,7 @@ Found and fixed a spurious config-change interrupt during the DRIVER_OK transiti
 </td>
 <td width="50%" valign="top">
 
-**youki (OCI Runtime)** — Live Memory & cgroups v2
+**youki (OCI Runtime)** — Live Memory & cgroups v2<br/>
 `PR #3688`
 
 Fixed CLI argument propagation for `--memory`, `--memory-reservation`, and `--memory-swap` into the kernel cgroup layer. Corrected types to signed `Option<i64>` for unlimited allocations, added regression coverage.
@@ -183,37 +183,6 @@ High-throughput hybrid vector and lexical retrieval engine.
 
 <br/>
 
-## Engineering Metrics
-
-<div align="center">
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=bharqav&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0A0E14&title_color=00D9FF&icon_color=00D9FF&text_color=8B9BB4&ring_color=00D9FF" />
-<img height="165" src="https://github-readme-streak-stats.herokuapp.com/?user=bharqav&theme=tokyonight&hide_border=true&background=0A0E14&ring=00D9FF&fire=00D9FF&currStreakLabel=00D9FF&sideLabels=8B9BB4&currStreakNum=E6EDF3&sideNums=E6EDF3&dates=8B9BB4" />
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bharqav&layout=compact&theme=tokyonight&hide_border=true&bg_color=0A0E14&title_color=00D9FF&text_color=8B9BB4" />
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=bharqav&theme=tokyo-night&bg_color=0A0E14&color=00D9FF&line=00D9FF&point=E6EDF3&hide_border=true&area=true" width="100%"/>
-
-</div>
-
-<br/>
-
-## Contribution Snake
-
-<div align="center">
-<img src="https://raw.githubusercontent.com/bharqav/bharqav/output/snake-dark.svg" width="100%"/>
-</div>
-
-<br/>
-
-## Trophy Case
-
-<div align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=bharqav&theme=algolia&no-frame=true&no-bg=true&margin-w=8&row=1&column=7" width="100%"/>
-</div>
-
-<br/>
-
 ## Currently Deep-Diving Into
 
 - **Speculative decoding acceptance proofs** — optimizing rejection sampling across batched draft verification steps
@@ -224,8 +193,8 @@ High-throughput hybrid vector and lexical retrieval engine.
 
 <div align="center">
 
-<a href="https://linkedin.com/in/YOUR-LINKEDIN"><img src="https://img.shields.io/badge/-LinkedIn-0A0E14?style=for-the-badge&logo=linkedin&logoColor=00D9FF" /></a>
-<a href="mailto:YOUR_EMAIL@example.com"><img src="https://img.shields.io/badge/-Email-0A0E14?style=for-the-badge&logo=gmail&logoColor=00D9FF" /></a>
+<a href="https://linkedin.com/in/podapatibhargav"><img src="https://img.shields.io/badge/-LinkedIn-0A0E14?style=for-the-badge&logo=linkedin&logoColor=00D9FF" /></a>
+<a href="mailto:bhargavpodapati28@gmail.com"><img src="https://img.shields.io/badge/-Email-0A0E14?style=for-the-badge&logo=gmail&logoColor=00D9FF" /></a>
 <a href="https://github.com/bharqav"><img src="https://img.shields.io/badge/-GitHub-0A0E14?style=for-the-badge&logo=github&logoColor=00D9FF" /></a>
 
 <br/><br/>
