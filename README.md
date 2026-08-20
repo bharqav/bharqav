@@ -2,12 +2,6 @@
 
 <img src="assets/header.svg" width="100%" alt="Bhargav - Systems and AI Infrastructure Engineer" />
 
-<a href="https://github.com/bharqav">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&duration=3200&pause=1200&color=00D9FF&center=true&vCenter=true&width=760&height=50&lines=I+write+code+that+runs+closer+to+the+metal+than+most+are+comfortable+with.;Zero-dependency+quantized+LLM+inference+in+portable+C99.;Raft+consensus.+VirtIO+drivers.+Lock-free+ring+buffers.;Currently%3A+30B+MoE+models+at+sub-200MB+peak+RSS." />
-</a>
-
-<br/>
-
 <img src="https://img.shields.io/badge/-C99-0A0E14?style=for-the-badge&logo=c&logoColor=00D9FF" />
 <img src="https://img.shields.io/badge/-C++-0A0E14?style=for-the-badge&logo=cplusplus&logoColor=00D9FF" />
 <img src="https://img.shields.io/badge/-Rust-0A0E14?style=for-the-badge&logo=rust&logoColor=00D9FF" />
