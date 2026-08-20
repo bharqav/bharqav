@@ -26,7 +26,7 @@
 
 <!-- SYSINFO -->
 ```c
-/* sysinfo.c — host developer identity */
+/* sysinfo.c - host developer identity */
 #include <stdio.h>
 #include <stdint.h>
 
@@ -63,7 +63,7 @@ int main(void) {
 <tr>
 <td width="50%" valign="top">
 
-**Crucible Security** — Tool Injection Assessment Module<br/>
+**Crucible Security** - Tool Injection Assessment Module<br/>
 `PR #64` · `Issue #49`
 
 Built an adversarial attack engine covering OWASP AGENT-004 across MCP and tool-augmented agents. Four attack classes, twenty adversarial vectors, 286+ passing tests with dynamic attack registration.
@@ -73,7 +73,7 @@ Built an adversarial attack engine covering OWASP AGENT-004 across MCP and tool-
 </td>
 <td width="50%" valign="top">
 
-**Crucible Security** — CI/CD Security Gating<br/>
+**Crucible Security** - CI/CD Security Gating<br/>
 `PR #64` · `Issue #52`
 
 Built a `--fail-on` severity threshold flag that blocks CI pipelines on HIGH/CRITICAL findings. Shipped reusable GitHub Actions templates for automated agent vulnerability scanning.
@@ -85,7 +85,7 @@ Built a `--fail-on` severity threshold flag that blocks CI pipelines on HIGH/CRI
 <tr>
 <td width="50%" valign="top">
 
-**Microsoft OpenVMM** — VirtIO Interrupt Fix<br/>
+**Microsoft OpenVMM** - VirtIO Interrupt Fix<br/>
 `PR #4226`
 
 Found and fixed a spurious config-change interrupt during the DRIVER_OK transition. Audited INTx/MSI-X/MMIO interrupt paths across transports and corrected `config_generation` increment behavior.
@@ -95,7 +95,7 @@ Found and fixed a spurious config-change interrupt during the DRIVER_OK transiti
 </td>
 <td width="50%" valign="top">
 
-**youki (OCI Runtime)** — Live Memory & cgroups v2<br/>
+**youki (OCI Runtime)** - Live Memory & cgroups v2<br/>
 `PR #3688`
 
 Fixed CLI argument propagation for `--memory`, `--memory-reservation`, and `--memory-swap` into the kernel cgroup layer. Corrected types to signed `Option<i64>` for unlimited allocations, added regression coverage.
@@ -185,9 +185,9 @@ High-throughput hybrid vector and lexical retrieval engine.
 
 ## Currently Deep-Diving Into
 
-- **Speculative decoding acceptance proofs** — optimizing rejection sampling across batched draft verification steps
-- **Zero-copy memory-mapped weight paging** — eliminating page-fault penalties on sparse 30B MoE models under DRAM constraints
-- **Lock-free ring buffers and actor models** — low-latency IPC over POSIX shared memory
+- **Speculative decoding acceptance proofs** - optimizing rejection sampling across batched draft verification steps
+- **Zero-copy memory-mapped weight paging** - eliminating page-fault penalties on sparse 30B MoE models under DRAM constraints
+- **Lock-free ring buffers and actor models** - low-latency IPC over POSIX shared memory
 
 <br/>
 
