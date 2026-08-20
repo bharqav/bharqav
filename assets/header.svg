@@ -1,215 +1,136 @@
-<svg width="100%" viewBox="0 0 1600 400" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Space themed profile header">
-<!-- ============================================================
-  Space themed profile header for Bhargav
-=============================================================== -->
-<defs>
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 320" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Inter:wght@400;600;700;800&amp;display=swap');
+      .title { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; font-weight: 800; font-size: 38px; fill: #FFFFFF; letter-spacing: -0.03em; }
+      .role { font-family: 'JetBrains Mono', monospace; font-weight: 500; font-size: 13px; fill: #A0A0A0; letter-spacing: 0.15em; text-transform: uppercase; }
+      .subtext { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; font-weight: 400; font-size: 14px; fill: #CCCCCC; }
+      .mono { font-family: 'JetBrains Mono', monospace; font-size: 11px; fill: #666666; letter-spacing: 0.05em; }
+      .mono-light { font-family: 'JetBrains Mono', monospace; font-size: 11px; fill: #A0A0A0; }
+      .badge-text { font-family: 'JetBrains Mono', monospace; font-size: 10px; fill: #E5E5E5; font-weight: 500; letter-spacing: 0.08em; }
+      .grid-line { stroke: #1A1A1A; stroke-width: 1; stroke-dasharray: 4 4; }
+      .orbit-line { stroke: #262626; stroke-width: 1; fill: none; }
+      .orbit-dashed { stroke: #333333; stroke-width: 1; stroke-dasharray: 3 6; fill: none; }
+      .pulse-dot { animation: pulse 3s infinite ease-in-out; }
+      @keyframes pulse { 0%, 100% { opacity: 0.3; } 50% { opacity: 1; } }
+    </style>
+    <radialGradient id="bgGlow" cx="80%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#141414" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#050505" stop-opacity="1" />
+    </radialGradient>
+  </defs>
 
-  <linearGradient id="bgGrad" x1="0" y1="0" x2="0.2" y2="1">
-    <stop offset="0%" stop-color="#03040a"/>
-    <stop offset="55%" stop-color="#060a16"/>
-    <stop offset="100%" stop-color="#081018"/>
-  </linearGradient>
+  <!-- Background Canvas -->
+  <rect width="960" height="320" fill="#050505" />
+  <rect width="960" height="320" fill="url(#bgGlow)" />
+  <rect x="1" y="1" width="958" height="318" fill="none" stroke="#222222" stroke-width="1" />
 
-  <radialGradient id="nebA" cx="14%" cy="88%" r="55%">
-    <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.14"/>
-    <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
-  </radialGradient>
-  <radialGradient id="nebB" cx="90%" cy="6%" r="42%">
-    <stop offset="0%" stop-color="#22d3ee" stop-opacity="0.10"/>
-    <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
-  </radialGradient>
-  <radialGradient id="nebC" cx="77%" cy="50%" r="34%">
-    <stop offset="0%" stop-color="#fbbf24" stop-opacity="0.07"/>
-    <stop offset="100%" stop-color="#fbbf24" stop-opacity="0"/>
-  </radialGradient>
+  <!-- Background Grid Lines -->
+  <line x1="40" y1="0" x2="40" y2="320" class="grid-line" />
+  <line x1="280" y1="0" x2="280" y2="320" class="grid-line" />
+  <line x1="620" y1="0" x2="620" y2="320" class="grid-line" />
+  <line x1="920" y1="0" x2="920" y2="320" class="grid-line" />
+  <line x1="0" y1="40" x2="960" y2="40" class="grid-line" />
+  <line x1="0" y1="280" x2="960" y2="280" class="grid-line" />
 
-  <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-    <stop offset="0%" stop-color="#eef4ff"/>
-    <stop offset="55%" stop-color="#22d3ee"/>
-    <stop offset="100%" stop-color="#eef4ff"/>
-  </linearGradient>
+  <!-- Aerospace Vector Elements on Right -->
+  <g transform="translate(780, 160)">
+    <!-- Concentric Technical Rings -->
+    <circle r="130" class="orbit-line" opacity="0.4" />
+    <circle r="105" class="orbit-dashed" opacity="0.6" />
+    <circle r="75" class="orbit-line" opacity="0.7" />
+    <circle r="45" class="orbit-dashed" opacity="0.8" />
+    <circle r="18" fill="#111111" stroke="#444444" stroke-width="1.5" />
+    <circle r="4" fill="#FFFFFF" class="pulse-dot" />
 
-  <linearGradient id="sheenGrad" x1="-40%" y1="0%" x2="-10%" y2="0%" gradientUnits="objectBoundingBox">
-    <stop offset="0%" stop-color="#eef4ff" stop-opacity="0"/>
-    <stop offset="45%" stop-color="#eef4ff" stop-opacity="0"/>
-    <stop offset="50%" stop-color="#eef4ff" stop-opacity="0.85"/>
-    <stop offset="55%" stop-color="#eef4ff" stop-opacity="0"/>
-    <stop offset="100%" stop-color="#eef4ff" stop-opacity="0"/>
-    <animate attributeName="x1" values="-40%;160%" dur="5.5s" begin="2s" repeatCount="indefinite"/>
-    <animate attributeName="x2" values="-10%;190%" dur="5.5s" begin="2s" repeatCount="indefinite"/>
-  </linearGradient>
+    <!-- Crosshair axes -->
+    <line x1="-140" y1="0" x2="140" y2="0" stroke="#262626" stroke-width="1" />
+    <line x1="0" y1="-140" x2="0" y2="140" stroke="#262626" stroke-width="1" />
 
-  <linearGradient id="streakGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-    <stop offset="0%" stop-color="#eef4ff" stop-opacity="0"/>
-    <stop offset="100%" stop-color="#eef4ff" stop-opacity="0.9"/>
-  </linearGradient>
+    <!-- Degree markers -->
+    <circle cx="0" cy="-105" r="2.5" fill="#888888" />
+    <circle cx="105" cy="0" r="2.5" fill="#888888" />
+    <circle cx="0" cy="105" r="2.5" fill="#888888" />
+    <circle cx="-105" cy="0" r="2.5" fill="#888888" />
 
-  <clipPath id="revealClip">
-    <rect x="102" y="170" width="0" height="86">
-      <animate attributeName="width" from="0" to="540" dur="1.5s" begin="0.25s"
-        fill="freeze" calcMode="spline" keySplines="0.16 1 0.3 1" keyTimes="0;1"/>
-    </rect>
-  </clipPath>
+    <!-- Orbital satellite points -->
+    <circle cx="53" cy="-53" r="3" fill="#FFFFFF" />
+    <line x1="53" y1="-53" x2="70" y2="-70" stroke="#666666" stroke-width="1" />
+    <text x="75" y="-72" class="mono" font-size="9" fill="#888888">NODE_01</text>
 
-  <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
-    <feGaussianBlur stdDeviation="4" result="blur"/>
-    <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-  </filter>
-  <filter id="softBlur" x="-50%" y="-50%" width="200%" height="200%">
-    <feGaussianBlur stdDeviation="18"/>
-  </filter>
-  <filter id="nodeGlow" x="-250%" y="-250%" width="600%" height="600%">
-    <feGaussianBlur stdDeviation="3" result="blur"/>
-    <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
-  </filter>
-
-</defs>
-<rect width="1600" height="400" fill="url(#bgGrad)"/>
-<ellipse cx="224.00000000000003" cy="352.0" rx="420" ry="250" fill="url(#nebA)" filter="url(#softBlur)"/>
-<ellipse cx="1440.0" cy="24.0" rx="340" ry="210" fill="url(#nebB)" filter="url(#softBlur)"/>
-<ellipse cx="1232.0" cy="200.0" rx="260" ry="200" fill="url(#nebC)" filter="url(#softBlur)"/>
-<pattern id="scan" width="4" height="4" patternUnits="userSpaceOnUse">
-<rect width="4" height="1" fill="white" opacity="0.025"/>
-</pattern>
-<rect width="1600" height="400" fill="url(#scan)"/>
-<path d="M22,52 L22,22 L52,22" stroke="#22d3ee" stroke-opacity="0.5" stroke-width="1.6" fill="none"/>
-<path d="M1578,52 L1578,22 L1548,22" stroke="#22d3ee" stroke-opacity="0.5" stroke-width="1.6" fill="none"/>
-<path d="M22,348 L22,378 L52,378" stroke="#22d3ee" stroke-opacity="0.5" stroke-width="1.6" fill="none"/>
-<path d="M1578,348 L1578,378 L1548,378" stroke="#22d3ee" stroke-opacity="0.5" stroke-width="1.6" fill="none"/>
-<g>
-<circle cx="723.8" cy="223.9" r="1.52" fill="#eef4ff" opacity="0.43"><animate attributeName="opacity" values="0.43;0.76;0.43" dur="3.9s" begin="2.54s" repeatCount="indefinite"/></circle>
-<circle cx="819.1" cy="252.0" r="1.37" fill="#eef4ff" opacity="0.28"><animate attributeName="opacity" values="0.28;0.94;0.28" dur="2.78s" begin="1.52s" repeatCount="indefinite"/></circle>
-<circle cx="1109.5" cy="16.8" r="1.58" fill="#eef4ff" opacity="0.43"><animate attributeName="opacity" values="0.43;0.75;0.43" dur="5.39s" begin="3.27s" repeatCount="indefinite"/></circle>
-<circle cx="24.0" cy="211.4" r="0.57" fill="#eef4ff" opacity="0.26"><animate attributeName="opacity" values="0.26;0.84;0.26" dur="3.07s" begin="1.21s" repeatCount="indefinite"/></circle>
-<circle cx="704.8" cy="337.0" r="1.07" fill="#eef4ff" opacity="0.45"><animate attributeName="opacity" values="0.45;0.84;0.45" dur="4.42s" begin="2.5s" repeatCount="indefinite"/></circle>
-<circle cx="445.1" cy="399.1" r="1.6" fill="#eef4ff" opacity="0.34"><animate attributeName="opacity" values="0.34;0.77;0.34" dur="5.02s" begin="3.54s" repeatCount="indefinite"/></circle>
-<circle cx="462.5" cy="28.1" r="1.34" fill="#eef4ff" opacity="0.37"><animate attributeName="opacity" values="0.37;0.99;0.37" dur="3.7s" begin="4.23s" repeatCount="indefinite"/></circle>
-<circle cx="1355.7" cy="0.2" r="0.73" fill="#eef4ff" opacity="0.54"><animate attributeName="opacity" values="0.54;0.82;0.54" dur="5.23s" begin="2.35s" repeatCount="indefinite"/></circle>
-<circle cx="116.9" cy="251.8" r="1.36" fill="#eef4ff" opacity="0.35"><animate attributeName="opacity" values="0.35;0.99;0.35" dur="3.31s" begin="0.44s" repeatCount="indefinite"/></circle>
-<circle cx="1212.9" cy="47.2" r="0.77" fill="#eef4ff" opacity="0.49"><animate attributeName="opacity" values="0.49;0.75;0.49" dur="2.8s" begin="0.3s" repeatCount="indefinite"/></circle>
-<circle cx="894.9" cy="179.0" r="0.71" fill="#eef4ff" opacity="0.44"><animate attributeName="opacity" values="0.44;0.73;0.44" dur="4.7s" begin="0.65s" repeatCount="indefinite"/></circle>
-<circle cx="673.2" cy="85.1" r="0.8" fill="#eef4ff" opacity="0.34"><animate attributeName="opacity" values="0.34;0.97;0.34" dur="5.41s" begin="4.02s" repeatCount="indefinite"/></circle>
-<circle cx="337.1" cy="157.7" r="1.44" fill="#eef4ff" opacity="0.55"><animate attributeName="opacity" values="0.55;0.76;0.55" dur="4.43s" begin="0.5s" repeatCount="indefinite"/></circle>
-<circle cx="413.2" cy="309.1" r="0.86" fill="#eef4ff" opacity="0.28"><animate attributeName="opacity" values="0.28;0.87;0.28" dur="3.39s" begin="0.37s" repeatCount="indefinite"/></circle>
-<circle cx="388.8" cy="240.5" r="0.91" fill="#eef4ff" opacity="0.4"><animate attributeName="opacity" values="0.4;0.87;0.4" dur="3.86s" begin="4.8s" repeatCount="indefinite"/></circle>
-<circle cx="1386.4" cy="73.1" r="0.67" fill="#eef4ff" opacity="0.32"><animate attributeName="opacity" values="0.32;0.76;0.32" dur="5.23s" begin="4.09s" repeatCount="indefinite"/></circle>
-<circle cx="1183.1" cy="376.2" r="0.72" fill="#eef4ff" opacity="0.43"><animate attributeName="opacity" values="0.43;0.83;0.43" dur="5.35s" begin="4.41s" repeatCount="indefinite"/></circle>
-<circle cx="166.1" cy="15.5" r="1.56" fill="#eef4ff" opacity="0.33"><animate attributeName="opacity" values="0.33;0.95;0.33" dur="3.22s" begin="3.52s" repeatCount="indefinite"/></circle>
-<circle cx="954.3" cy="117.4" r="0.69" fill="#eef4ff" opacity="0.32"><animate attributeName="opacity" values="0.32;0.87;0.32" dur="4.66s" begin="0.34s" repeatCount="indefinite"/></circle>
-<circle cx="1363.8" cy="245.7" r="0.81" fill="#eef4ff" opacity="0.25"><animate attributeName="opacity" values="0.25;0.78;0.25" dur="5.25s" begin="1.02s" repeatCount="indefinite"/></circle>
-<circle cx="713.1" cy="24.2" r="0.69" fill="#eef4ff" opacity="0.29"><animate attributeName="opacity" values="0.29;0.81;0.29" dur="3.61s" begin="2.86s" repeatCount="indefinite"/></circle>
-<circle cx="1425.5" cy="392.2" r="1.22" fill="#eef4ff" opacity="0.29"><animate attributeName="opacity" values="0.29;0.71;0.29" dur="4.57s" begin="2.92s" repeatCount="indefinite"/></circle>
-<circle cx="28.6" cy="364.1" r="1.27" fill="#eef4ff" opacity="0.44"><animate attributeName="opacity" values="0.44;0.84;0.44" dur="5.39s" begin="0.11s" repeatCount="indefinite"/></circle>
-<circle cx="1168.8" cy="127.6" r="1.6" fill="#eef4ff" opacity="0.47"><animate attributeName="opacity" values="0.47;0.97;0.47" dur="2.73s" begin="2.73s" repeatCount="indefinite"/></circle>
-<circle cx="1179.3" cy="281.5" r="1.37" fill="#eef4ff" opacity="0.46"><animate attributeName="opacity" values="0.46;0.97;0.46" dur="5.25s" begin="1.76s" repeatCount="indefinite"/></circle>
-<circle cx="1393.8" cy="166.9" r="1.37" fill="#eef4ff" opacity="0.44"><animate attributeName="opacity" values="0.44;0.81;0.44" dur="5.09s" begin="2.86s" repeatCount="indefinite"/></circle>
-<circle cx="932.3" cy="243.5" r="0.59" fill="#eef4ff" opacity="0.51"><animate attributeName="opacity" values="0.51;0.92;0.51" dur="4.42s" begin="4.97s" repeatCount="indefinite"/></circle>
-<circle cx="621.5" cy="294.0" r="1.14" fill="#eef4ff" opacity="0.28"><animate attributeName="opacity" values="0.28;0.93;0.28" dur="3.82s" begin="4.19s" repeatCount="indefinite"/></circle>
-<circle cx="47.7" cy="240.5" r="1.03" fill="#eef4ff" opacity="0.4"><animate attributeName="opacity" values="0.4;0.88;0.4" dur="3.19s" begin="3.49s" repeatCount="indefinite"/></circle>
-<circle cx="1472.7" cy="102.3" r="0.51" fill="#eef4ff" opacity="0.31"><animate attributeName="opacity" values="0.31;0.75;0.31" dur="3.4s" begin="3.39s" repeatCount="indefinite"/></circle>
-<circle cx="1449.2" cy="264.0" r="0.99" fill="#eef4ff" opacity="0.45"><animate attributeName="opacity" values="0.45;0.76;0.45" dur="5.18s" begin="1.63s" repeatCount="indefinite"/></circle>
-<circle cx="689.4" cy="322.4" r="1.51" fill="#eef4ff" opacity="0.42"><animate attributeName="opacity" values="0.42;0.79;0.42" dur="5.14s" begin="1.92s" repeatCount="indefinite"/></circle>
-<circle cx="217.9" cy="198.6" r="1.42" fill="#eef4ff" opacity="0.54"><animate attributeName="opacity" values="0.54;0.78;0.54" dur="5.05s" begin="3.56s" repeatCount="indefinite"/></circle>
-<circle cx="270.6" cy="180.3" r="0.8" fill="#eef4ff" opacity="0.44"><animate attributeName="opacity" values="0.44;0.85;0.44" dur="3.14s" begin="2.07s" repeatCount="indefinite"/></circle>
-<circle cx="504.6" cy="335.6" r="1.58" fill="#eef4ff" opacity="0.26"><animate attributeName="opacity" values="0.26;0.96;0.26" dur="3.86s" begin="0.37s" repeatCount="indefinite"/></circle>
-<circle cx="66.4" cy="283.5" r="1.13" fill="#eef4ff" opacity="0.26"><animate attributeName="opacity" values="0.26;0.74;0.26" dur="3.43s" begin="3.96s" repeatCount="indefinite"/></circle>
-<circle cx="727.7" cy="9.9" r="1.41" fill="#eef4ff" opacity="0.26"><animate attributeName="opacity" values="0.26;0.89;0.26" dur="3.21s" begin="0.7s" repeatCount="indefinite"/></circle>
-<circle cx="714.4" cy="252.0" r="1.22" fill="#eef4ff" opacity="0.46"><animate attributeName="opacity" values="0.46;0.76;0.46" dur="4.92s" begin="4.79s" repeatCount="indefinite"/></circle>
-<circle cx="760.2" cy="71.5" r="0.51" fill="#eef4ff" opacity="0.3"><animate attributeName="opacity" values="0.3;0.78;0.3" dur="3.92s" begin="3.57s" repeatCount="indefinite"/></circle>
-<circle cx="553.2" cy="278.9" r="1.07" fill="#eef4ff" opacity="0.37"><animate attributeName="opacity" values="0.37;0.94;0.37" dur="4.34s" begin="3.78s" repeatCount="indefinite"/></circle>
-<circle cx="1450.0" cy="34.9" r="1.53" fill="#eef4ff" opacity="0.39"><animate attributeName="opacity" values="0.39;0.89;0.39" dur="4.67s" begin="0.65s" repeatCount="indefinite"/></circle>
-<circle cx="1455.9" cy="150.7" r="1.13" fill="#eef4ff" opacity="0.53"><animate attributeName="opacity" values="0.53;0.84;0.53" dur="5.14s" begin="3.98s" repeatCount="indefinite"/></circle>
-<circle cx="1042.1" cy="82.0" r="1.29" fill="#eef4ff" opacity="0.47"><animate attributeName="opacity" values="0.47;0.76;0.47" dur="4.96s" begin="3.21s" repeatCount="indefinite"/></circle>
-<circle cx="1440.0" cy="392.2" r="1.58" fill="#eef4ff" opacity="0.35"><animate attributeName="opacity" values="0.35;0.97;0.35" dur="4.11s" begin="3.95s" repeatCount="indefinite"/></circle>
-<circle cx="1369.3" cy="139.4" r="0.59" fill="#eef4ff" opacity="0.48"><animate attributeName="opacity" values="0.48;0.85;0.48" dur="3.82s" begin="2.75s" repeatCount="indefinite"/></circle>
-<circle cx="45.5" cy="323.7" r="0.57" fill="#eef4ff" opacity="0.35"><animate attributeName="opacity" values="0.35;0.94;0.35" dur="4.9s" begin="0.86s" repeatCount="indefinite"/></circle>
-<circle cx="260.8" cy="80.5" r="1.76" fill="#eef4ff" filter="url(#glow)" opacity="0.8"><animate attributeName="opacity" values="0.5;1;0.5" dur="5.17s" begin="3.36s" repeatCount="indefinite"/></circle>
-<circle cx="1084.1" cy="351.6" r="1.74" fill="#eef4ff" filter="url(#glow)" opacity="0.8"><animate attributeName="opacity" values="0.5;1;0.5" dur="5.85s" begin="0.34s" repeatCount="indefinite"/></circle>
-<circle cx="382.1" cy="209.1" r="1.6" fill="#eef4ff" filter="url(#glow)" opacity="0.8"><animate attributeName="opacity" values="0.5;1;0.5" dur="5.19s" begin="2.56s" repeatCount="indefinite"/></circle>
-<circle cx="834.2" cy="316.8" r="1.79" fill="#eef4ff" filter="url(#glow)" opacity="0.8"><animate attributeName="opacity" values="0.5;1;0.5" dur="3.94s" begin="1.52s" repeatCount="indefinite"/></circle>
-<circle cx="1317.9" cy="336.2" r="1.55" fill="#eef4ff" filter="url(#glow)" opacity="0.8"><animate attributeName="opacity" values="0.5;1;0.5" dur="5.55s" begin="3.87s" repeatCount="indefinite"/></circle>
-<circle cx="836.3" cy="224.8" r="1.54" fill="#eef4ff" filter="url(#glow)" opacity="0.8"><animate attributeName="opacity" values="0.5;1;0.5" dur="4.61s" begin="2.01s" repeatCount="indefinite"/></circle>
-</g>
-
-  <g opacity="0">
-    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.02;0.06;0.16;1" dur="9s" begin="1s" repeatCount="indefinite"/>
-    <line x1="0" y1="0" x2="-90" y2="0" stroke="url(#streakGrad)" stroke-width="2" transform="rotate(30.96375653207352)"/>
-    <animateMotion path="M120,40 L420,220" dur="9s" begin="1s" repeatCount="indefinite"/>
+    <circle cx="-32" cy="67" r="2" fill="#AAAAAA" />
+    <line x1="-32" y1="67" x2="-45" y2="80" stroke="#444444" stroke-width="1" />
+    <text x="-90" y="84" class="mono" font-size="9" fill="#666666">ORBIT_RNG</text>
   </g>
 
-  <g opacity="0">
-    <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.02;0.06;0.16;1" dur="12s" begin="5.5s" repeatCount="indefinite"/>
-    <line x1="0" y1="0" x2="-90" y2="0" stroke="url(#streakGrad)" stroke-width="2" transform="rotate(28.072486935852957)"/>
-    <animateMotion path="M1000,30 L1300,190" dur="12s" begin="5.5s" repeatCount="indefinite"/>
+  <!-- Top Telemetry Bar -->
+  <g transform="translate(48, 26)">
+    <rect x="0" y="-14" width="6" height="6" fill="#FFFFFF" />
+    <text x="14" y="-8" class="mono">SYSTEMS SPEC: AUTONOMOUS_ENG // HOST: PROD</text>
+    <text x="450" y="-8" class="mono">SYS_LAT: 0.18ms</text>
+    <text x="590" y="-8" class="mono">LOC: 12.9716 N, 77.5946 E [BLR]</text>
+    <text x="800" y="-8" class="mono">BUILD: STABLE</text>
   </g>
-<line x1="86" y1="118" x2="86" y2="286" stroke="#22d3ee" stroke-opacity="0.35" stroke-width="2"/>
-<text x="112" y="150" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="15" letter-spacing="3" fill="#22d3ee" fill-opacity="0.75">// LOCATION: EARTH</text>
-<g clip-path="url(#revealClip)">
-<text x="112" y="222" font-family="ui-sans-serif, system-ui, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="58" font-weight="600" letter-spacing="2" fill="url(#nameGrad)" filter="url(#glow)">BHARGAV</text>
-<text x="112" y="222" font-family="ui-sans-serif, system-ui, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="58" font-weight="600" letter-spacing="2" fill="url(#sheenGrad)" style="mix-blend-mode:screen">BHARGAV</text>
-</g>
-<text x="112" y="260" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="18" letter-spacing="1.5" fill="#eef4ff" fill-opacity="0.55">SYSTEMS &amp; AI INFRASTRUCTURE ENGINEER</text>
-<circle cx="116" cy="284" r="4" fill="#fbbf24"><animate attributeName="opacity" values="1;0.35;1" dur="2.2s" repeatCount="indefinite"/></circle>
-<text x="128" y="289" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13" letter-spacing="2" fill="#fbbf24" fill-opacity="0.75">STATUS: ONLINE</text>
-<g>
-<circle cx="1230" cy="200" r="150" stroke="rgba(148,197,255,0.30)" stroke-width="1"/>
-<line x1="1364.0" y1="200.0" x2="1380.0" y2="200.0" stroke="#22d3ee" stroke-opacity="0.55" stroke-width="1.6"/>
-<line x1="1369.8" y1="224.7" x2="1377.7" y2="226.0" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="1"/>
-<line x1="1363.4" y1="248.6" x2="1371.0" y2="251.3" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="1"/>
-<line x1="1353.0" y1="271.0" x2="1359.9" y2="275.0" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="1"/>
-<line x1="1338.8" y1="291.3" x2="1344.9" y2="296.4" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="1"/>
-<line x1="1321.3" y1="308.8" x2="1326.4" y2="314.9" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="1"/>
-<line x1="1301.0" y1="323.0" x2="1305.0" y2="329.9" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="1"/>
-<line x1="1278.6" y1="333.4" x2="1281.3" y2="341.0" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="1"/>
-<line x1="1254.7" y1="339.8" x2="1256.0" y2="347.7" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="1"/>
-<line x1="1230.0" y1="334.0" x2="1230.0" y2="350.0" stroke="#22d3ee" stroke-opacity="0.55" stroke-width="1.6"/>
-<line x1="1205.3" y1="339.8" x2="1204.0" y2="347.7" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="1"/>
-<line x1="1181.4" y1="333.4" x2="1178.7" y2="341.0" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="1"/>
-<line x1="1159.0" y1="323.0" x2="1155.0" y2="329.9" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="1"/>
-<line x1="1138.7" y1="308.8" x2="1133.6" y2="314.9" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="1"/>
-<line x1="1121.2" y1="291.3" x2="1115.1" y2="296.4" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="1"/>
-<line x1="1107.0" y1="271.0" x2="1100.1" y2="275.0" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="1"/>
-<line x1="1096.6" y1="248.6" x2="1089.0" y2="251.3" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="1"/>
-<line x1="1090.2" y1="224.7" x2="1082.3" y2="226.0" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="1"/>
-<line x1="1096.0" y1="200.0" x2="1080.0" y2="200.0" stroke="#22d3ee" stroke-opacity="0.55" stroke-width="1.6"/>
-<line x1="1090.2" y1="175.3" x2="1082.3" y2="174.0" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="1"/>
-<line x1="1096.6" y1="151.4" x2="1089.0" y2="148.7" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="1"/>
-<line x1="1107.0" y1="129.0" x2="1100.1" y2="125.0" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="1"/>
-<line x1="1121.2" y1="108.7" x2="1115.1" y2="103.6" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="1"/>
-<line x1="1138.7" y1="91.2" x2="1133.6" y2="85.1" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="1"/>
-<line x1="1159.0" y1="77.0" x2="1155.0" y2="70.1" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="1"/>
-<line x1="1181.4" y1="66.6" x2="1178.7" y2="59.0" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="1"/>
-<line x1="1205.3" y1="60.2" x2="1204.0" y2="52.3" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="1"/>
-<line x1="1230.0" y1="66.0" x2="1230.0" y2="50.0" stroke="#22d3ee" stroke-opacity="0.55" stroke-width="1.6"/>
-<line x1="1254.7" y1="60.2" x2="1256.0" y2="52.3" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="1"/>
-<line x1="1278.6" y1="66.6" x2="1281.3" y2="59.0" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="1"/>
-<line x1="1301.0" y1="77.0" x2="1305.0" y2="70.1" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="1"/>
-<line x1="1321.3" y1="91.2" x2="1326.4" y2="85.1" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="1"/>
-<line x1="1338.8" y1="108.7" x2="1344.9" y2="103.6" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="1"/>
-<line x1="1353.0" y1="129.0" x2="1359.9" y2="125.0" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="1"/>
-<line x1="1363.4" y1="151.4" x2="1371.0" y2="148.7" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="1"/>
-<line x1="1369.8" y1="175.3" x2="1377.7" y2="174.0" stroke="#22d3ee" stroke-opacity="0.2" stroke-width="1"/>
-<circle cx="1230" cy="200" r="58" stroke="rgba(148,197,255,0.30)" stroke-width="1"/>
 
-  <g transform="translate(1230,200)">
-    <g>
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="5s" repeatCount="indefinite"/>
-      <line x1="0" y1="0" x2="146.0" y2="0.0" stroke="#fbbf24" stroke-opacity="0.55" stroke-width="2"/><line x1="0" y1="0" x2="145.8" y2="-8.1" stroke="#22d3ee" stroke-opacity="0.489" stroke-width="1.4"/><line x1="0" y1="0" x2="145.1" y2="-16.3" stroke="#22d3ee" stroke-opacity="0.428" stroke-width="1.4"/><line x1="0" y1="0" x2="144.0" y2="-24.3" stroke="#22d3ee" stroke-opacity="0.367" stroke-width="1.4"/><line x1="0" y1="0" x2="142.4" y2="-32.3" stroke="#22d3ee" stroke-opacity="0.306" stroke-width="1.4"/><line x1="0" y1="0" x2="140.3" y2="-40.2" stroke="#22d3ee" stroke-opacity="0.244" stroke-width="1.4"/><line x1="0" y1="0" x2="137.9" y2="-48.0" stroke="#22d3ee" stroke-opacity="0.183" stroke-width="1.4"/><line x1="0" y1="0" x2="135.0" y2="-55.6" stroke="#22d3ee" stroke-opacity="0.122" stroke-width="1.4"/><line x1="0" y1="0" x2="131.7" y2="-63.1" stroke="#22d3ee" stroke-opacity="0.061" stroke-width="1.4"/>
+  <line x1="48" y1="40" x2="912" y2="40" stroke="#222222" stroke-width="1" />
+
+  <!-- Main Hero Typography Content -->
+  <g transform="translate(48, 85)">
+    <!-- Role badge / Subheader -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="310" height="22" fill="#111111" stroke="#2A2A2A" stroke-width="1" rx="2" />
+      <circle cx="10" cy="11" r="3" fill="#FFFFFF" />
+      <text x="22" y="15" class="badge-text">TECHNICAL FOUNDER / SYSTEMS ENGINEER</text>
+    </g>
+
+    <!-- Name Heading -->
+    <text x="0" y="60" class="title">BHARGAV PODAPATI</text>
+
+    <!-- Discipline Pillars -->
+    <text x="0" y="92" class="role">SYSTEMS * AI * INFRASTRUCTURE</text>
+
+    <!-- Core Statement -->
+    <text x="0" y="125" class="subtext">Building autonomous software engineering systems and baremetal AI infrastructure.</text>
+    <text x="0" y="146" class="mono-light">Low-level runtimes, distributed consensus, deterministic systems, and zero-allocation pipelines.</text>
+  </g>
+
+  <!-- Capability Chips at bottom -->
+  <g transform="translate(48, 252)">
+    <!-- Chip 1 -->
+    <rect x="0" y="0" width="130" height="26" fill="#0A0A0A" stroke="#222222" stroke-width="1" rx="2" />
+    <text x="12" y="17" class="mono-light" font-weight="500">AI SYSTEMS</text>
+
+    <!-- Chip 2 -->
+    <rect x="140" y="0" width="170" height="26" fill="#0A0A0A" stroke="#222222" stroke-width="1" rx="2" />
+    <text x="152" y="17" class="mono-light" font-weight="500">DISTRIBUTED SYSTEMS</text>
+
+    <!-- Chip 3 -->
+    <rect x="320" y="0" width="140" height="26" fill="#0A0A0A" stroke="#222222" stroke-width="1" rx="2" />
+    <text x="332" y="17" class="mono-light" font-weight="500">INFRASTRUCTURE</text>
+
+    <!-- Chip 4 -->
+    <rect x="470" y="0" width="165" height="26" fill="#0A0A0A" stroke="#222222" stroke-width="1" rx="2" />
+    <text x="482" y="17" class="mono-light" font-weight="500">LOW-LEVEL RUNTIMES</text>
+
+    <!-- Right Side Status -->
+    <g transform="translate(680, 0)">
+      <rect x="0" y="0" width="184" height="26" fill="#111111" stroke="#2A2A2A" stroke-width="1" rx="2" />
+      <circle cx="12" cy="13" r="3" fill="#FFFFFF" class="pulse-dot" />
+      <text x="24" y="17" class="badge-text">STATUS: ACTIVE COMPILATION</text>
     </g>
   </g>
 
-<circle cx="1230" cy="200" r="104" stroke="#22d3ee" stroke-opacity="0.22" stroke-width="1" stroke-dasharray="2 6"/>
-
-  <g>
-    <animateTransform attributeName="transform" type="rotate" from="0 1230 200" to="360 1230 200" dur="42s" repeatCount="indefinite"/>
-    <circle cx="1334.0" cy="200.0" r="6" fill="#fbbf24" fill-opacity="1.0" filter="url(#nodeGlow)"/><circle cx="1333.2" cy="212.7" r="4.2" fill="#fbbf24" fill-opacity="0.5"/><circle cx="1331.3" cy="223.4" r="2.6" fill="#fbbf24" fill-opacity="0.25"/>
+  <!-- Bottom Coordinates Line -->
+  <line x1="48" y1="280" x2="912" y2="280" stroke="#222222" stroke-width="1" />
+  <g transform="translate(48, 302)">
+    <text x="0" y="0" class="mono">CORE: C99 / C++17 / RUST / LINUX</text>
+    <text x="440" y="0" class="mono">PARADIGM: FIRST PRINCIPLES</text>
+    <text x="730" y="0" class="mono">SYS_HASH: 0x7F9B4D1A</text>
   </g>
 
-
-  <circle cx="1230" cy="200" r="9" fill="#fbbf24" filter="url(#nodeGlow)" opacity="0.9">
-    <animate attributeName="r" values="7;11;7" dur="4s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0.7;1;0.7" dur="4s" repeatCount="indefinite"/>
-  </circle>
-
-</g>
+  <!-- Corner Brackets -->
+  <path d="M 6 18 L 6 6 L 18 6" stroke="#444444" stroke-width="1.5" fill="none" />
+  <path d="M 942 6 L 954 6 L 954 18" stroke="#444444" stroke-width="1.5" fill="none" />
+  <path d="M 6 302 L 6 314 L 18 314" stroke="#444444" stroke-width="1.5" fill="none" />
+  <path d="M 942 314 L 954 314 L 954 302" stroke="#444444" stroke-width="1.5" fill="none" />
 </svg>

@@ -1,0 +1,99 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 140" width="100%" height="100%">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;700&amp;family=Inter:wght@600;700&amp;display=swap');
+      .step-title { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 11px; fill: #FFFFFF; letter-spacing: 0.05em; text-anchor: middle; }
+      .step-sub { font-family: 'JetBrains Mono', monospace; font-size: 9px; fill: #888888; text-anchor: middle; }
+      .meta { font-family: 'JetBrains Mono', monospace; font-size: 10px; fill: #555555; }
+      .arrow { stroke: #444444; stroke-width: 1.2; fill: none; }
+    </style>
+  </defs>
+
+  <rect width="960" height="140" fill="#080808" />
+  <rect x="1" y="1" width="958" height="138" fill="none" stroke="#1F1F1F" stroke-width="1" />
+
+  <!-- Step 1: EXPLORE -->
+  <g transform="translate(20, 25)">
+    <rect x="0" y="0" width="95" height="75" rx="3" fill="#0E0E0E" stroke="#262626" stroke-width="1" />
+    <circle cx="47.5" cy="18" r="2.5" fill="#AAAAAA" />
+    <text x="47.5" y="38" class="step-title">01 EXPLORE</text>
+    <text x="47.5" y="55" class="step-sub">read / RFCs</text>
+    <text x="47.5" y="66" class="step-sub">research</text>
+  </g>
+  <path d="M 120 62 L 134 62" class="arrow" />
+
+  <!-- Step 2: DECOMPOSE -->
+  <g transform="translate(138, 25)">
+    <rect x="0" y="0" width="95" height="75" rx="3" fill="#0E0E0E" stroke="#262626" stroke-width="1" />
+    <circle cx="47.5" cy="18" r="2.5" fill="#AAAAAA" />
+    <text x="47.5" y="38" class="step-title">02 DECOMPOSE</text>
+    <text x="47.5" y="55" class="step-sub">system map</text>
+    <text x="47.5" y="66" class="step-sub">mechanics</text>
+  </g>
+  <path d="M 238 62 L 252 62" class="arrow" />
+
+  <!-- Step 3: DESIGN -->
+  <g transform="translate(256, 25)">
+    <rect x="0" y="0" width="95" height="75" rx="3" fill="#0E0E0E" stroke="#262626" stroke-width="1" />
+    <circle cx="47.5" cy="18" r="2.5" fill="#AAAAAA" />
+    <text x="47.5" y="38" class="step-title">03 DESIGN</text>
+    <text x="47.5" y="55" class="step-sub">invariants</text>
+    <text x="47.5" y="66" class="step-sub">trade-offs</text>
+  </g>
+  <path d="M 356 62 L 370 62" class="arrow" />
+
+  <!-- Step 4: CODE -->
+  <g transform="translate(374, 25)">
+    <rect x="0" y="0" width="95" height="75" rx="3" fill="#0E0E0E" stroke="#262626" stroke-width="1" />
+    <circle cx="47.5" cy="18" r="2.5" fill="#AAAAAA" />
+    <text x="47.5" y="38" class="step-title">04 CODE</text>
+    <text x="47.5" y="55" class="step-sub">zero alloc</text>
+    <text x="47.5" y="66" class="step-sub">unit tests</text>
+  </g>
+  <path d="M 474 62 L 488 62" class="arrow" />
+
+  <!-- Step 5: VALIDATE -->
+  <g transform="translate(492, 25)">
+    <rect x="0" y="0" width="95" height="75" rx="3" fill="#0E0E0E" stroke="#262626" stroke-width="1" />
+    <circle cx="47.5" cy="18" r="2.5" fill="#AAAAAA" />
+    <text x="47.5" y="38" class="step-title">05 VALIDATE</text>
+    <text x="47.5" y="55" class="step-sub">bit parity</text>
+    <text x="47.5" y="66" class="step-sub">gate ladder</text>
+  </g>
+  <path d="M 592 62 L 606 62" class="arrow" />
+
+  <!-- Step 6: BREAK -->
+  <g transform="translate(610, 25)">
+    <rect x="0" y="0" width="95" height="75" rx="3" fill="#0E0E0E" stroke="#262626" stroke-width="1" />
+    <circle cx="47.5" cy="18" r="2.5" fill="#AAAAAA" />
+    <text x="47.5" y="38" class="step-title">06 BREAK</text>
+    <text x="47.5" y="55" class="step-sub">fault inject</text>
+    <text x="47.5" y="66" class="step-sub">chaos tests</text>
+  </g>
+  <path d="M 710 62 L 724 62" class="arrow" />
+
+  <!-- Step 7: MEASURE -->
+  <g transform="translate(728, 25)">
+    <rect x="0" y="0" width="95" height="75" rx="3" fill="#0E0E0E" stroke="#262626" stroke-width="1" />
+    <circle cx="47.5" cy="18" r="2.5" fill="#AAAAAA" />
+    <text x="47.5" y="38" class="step-title">07 MEASURE</text>
+    <text x="47.5" y="55" class="step-sub">perf telemetry</text>
+    <text x="47.5" y="66" class="step-sub">profiling</text>
+  </g>
+  <path d="M 828 62 L 842 62" class="arrow" />
+
+  <!-- Step 8: SHIP -->
+  <g transform="translate(846, 25)">
+    <rect x="0" y="0" width="94" height="75" rx="3" fill="#141414" stroke="#383838" stroke-width="1.2" />
+    <circle cx="47" cy="18" r="3" fill="#FFFFFF" />
+    <text x="47" y="38" class="step-title">08 SHIP</text>
+    <text x="47" y="55" class="step-sub">documentation</text>
+    <text x="47" y="66" class="step-sub">open source</text>
+  </g>
+
+  <!-- Bottom Annotation -->
+  <g transform="translate(20, 122)">
+    <text x="0" y="0" class="meta">LIFECYCLE PIPELINE: CONTINUOUS REFINEMENT LOOP</text>
+    <text x="730" y="0" class="meta">DETERMINISTIC // REPRODUCIBLE</text>
+  </g>
+</svg>

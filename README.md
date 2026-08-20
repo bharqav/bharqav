@@ -1,254 +1,324 @@
-<!-- ================================================================= -->
-<!-- 1. SPACE THEMED ANIMATED PROFILE HEADER                           -->
-<!-- ================================================================= -->
+﻿<div align="center">
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/bharqav/bharqav/main/assets/header.svg" width="100%" alt="Space Profile Header" />
+<img src="assets/header.svg" alt="Bhargav Podapati - Technical Founder / Systems Engineer" width="100%" />
+
 </div>
 
-<div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=19&duration=2800&pause=1000&color=22D3EE&center=true&vCenter=true&multiline=false&width=700&height=40&lines=Building+baremetal+quantized+LLM+runtimes+in+portable+C99;Patching+VirtIO+hypervisor+transports+on+Microsoft+OpenVMM;Engineering+Raft-consensus+distributed+state+machines;Executing+fused+integer+GEMV+with+zero+hot-path+allocations" alt="Mission Control Typing SVG" />
-  </a>
-</div>
+<br />
 
-<div align="center">
-  <p>
-    <code>⚡ [MISSION: DEEP SPACE INFRASTRUCTURE] // APOGEE: 30B MoE // PERIGEE: 180MB RSS // WARP: AVX-512</code>
-  </p>
-</div>
-
-<br/>
-
-<!-- ================================================================= -->
-<!-- 2. FLIGHT COMPUTER TELEMETRY                                      -->
-<!-- ================================================================= -->
-
-```c
-/**
- * @file flight_computer.c
- * @brief Autonomous Deep-Space Guidance Computer & Host Telemetry.
- */
-
-#include <stdio.h>
-#include <stdint.h>
-
-typedef struct {
-    const char *commander;
-    const char *station_role;
-    const char *orbital_missions[4];
-    const char *propulsion_kernel;
-    uint32_t   telemetry_flags;
-} nav_computer_t;
-
-int main(void) {
-    const nav_computer_t flight_deck = {
-        .commander          = "Bhargav",
-        .station_role       = "Systems and AI Infrastructure Engineer",
-        .orbital_missions   = {
-            "Baremetal Quantized LLM Runtimes (C99)",
-            "Hypervisor Virtualization (VirtIO / OpenVMM)",
-            "Container Propulsion (OCI / Cgroups v2)",
-            "Distributed Clustered Consensus (Raft / WAL)"
-        },
-        .propulsion_kernel  = "Fused Integer GEMV on AVX2 / AVX-512 VNNI",
-        .telemetry_flags    = (1 << 3) /* -O3 -march=native -fopenmp -Wall -Wextra */
-    };
-
-    printf("[%s] Station Status: ONLINE // Propulsion: %s\n", 
-           flight_deck.commander, flight_deck.propulsion_kernel);
-    return 0;
-}
+```text
+==================================================================================================
+IDENTITY        : BHARGAV PODAPATI
+ROLE            : TECHNICAL FOUNDER / SYSTEMS ENGINEER
+FOCUS           : SYSTEMS * AI INFRASTRUCTURE * DISTRIBUTED RUNTIMES
+LOCATION        : BENGALURU, INDIA [12.9716° N, 77.5946° E]
+STATUS          : ACTIVE / OPEN SOURCE SYSTEMS
+==================================================================================================
 ```
 
-<br/>
+---
 
-<!-- ================================================================= -->
-<!-- 3. PLANETARY CELESTIAL FLEET (FEATURED SYSTEMS)                   -->
-<!-- ================================================================= -->
+## 01. CURRENT MISSION
 
-### 🪐 Planetary Fleet & Orbital Systems
+> **Building autonomous software engineering systems.**
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3 align="left">🌌 <a href="https://github.com/bharqav/quantr-in-c">quantr-in-c</a></h3>
-      <p><b>Zero-gravity baremetal quantized LLM and MoE runtime in portable C99.</b></p>
-      <ul>
-        <li><b>Zero Hot-Path Allocations</b>: Fused integer SIMD matrix multiplication using <code>_mm256_maddubs_epi16</code> and <code>_mm512_dpbusd_epi32</code>.</li>
-        <li><b>15 Mathematical Test Gates</b>: Bit-exact parity verification across scalar and vectorized SIMD kernels.</li>
-        <li><b>180MB RAM Floor</b>: Zero-copy virtual memory mapping and paged Q8_0 KV cache for memory-constrained hardware.</li>
-      </ul>
-      <p>
-        <img src="https://img.shields.io/badge/Orbit-Inner%20Core-0ea5e9?style=flat-square" />
-        <img src="https://img.shields.io/badge/Lang-C99-00599C?style=flat-square&logo=c&logoColor=white" />
-        <img src="https://img.shields.io/badge/SIMD-AVX512%20VNNI-orange?style=flat-square" />
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h3 align="left">🛰️ <a href="https://github.com/bharqav/mysh">mysh</a></h3>
-      <p><b>POSIX command-line orbital flight deck and process control shell in C++.</b></p>
-      <ul>
-        <li><b>Recursive AST Propulsion</b>: Multi-stage pipeline execution (<code>|</code>), subshell branching, and file descriptor redirections.</li>
-        <li><b>Process Group Control</b>: Terminal foreground and background signal routing with robust job isolation.</li>
-        <li><b>Builtins & Resolution</b>: Native directory stack, alias substitution, and wildcard expansion.</li>
-      </ul>
-      <p>
-        <img src="https://img.shields.io/badge/Orbit-Outer%20Probe-10b981?style=flat-square" />
-        <img src="https://img.shields.io/badge/Lang-C%2B%2B20-00599C?style=flat-square&logo=c%2B%2B&logoColor=white" />
-        <img src="https://img.shields.io/badge/Subsystem-POSIX%20Unix-red?style=flat-square" />
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3 align="left">🪐 <a href="https://github.com/bharqav/distributed-kv-store">distributed-kv-store</a></h3>
-      <p><b>Fault-tolerant clustered persistence engine from first principles.</b></p>
-      <ul>
-        <li><b>Raft Consensus Protocol</b>: Leader election, log replication, snapshotting, and cluster reconfiguration.</li>
-        <li><b>Virtual Token Ring</b>: Consistent hashing for balanced data distribution and minimal partition rebalancing.</li>
-        <li><b>Causal Ordering</b>: Hybrid Logical Clocks (HLC) with append-only Write-Ahead Logging (WAL).</li>
-      </ul>
-      <p>
-        <img src="https://img.shields.io/badge/Orbit-Gas%20Giant-a855f7?style=flat-square" />
-        <img src="https://img.shields.io/badge/Consensus-Raft-blueviolet?style=flat-square" />
-        <img src="https://img.shields.io/badge/Lang-Go-00ADD8?style=flat-square&logo=go&logoColor=white" />
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h3 align="left">🔭 <a href="https://github.com/bharqav/ultimate-hybrid-rag">ultimate-hybrid-rag</a></h3>
-      <p><b>High-throughput neural vector and lexical deep-space retrieval engine.</b></p>
-      <ul>
-        <li><b>Reciprocal Rank Fusion</b>: Blends dense neural vector embeddings with BM25 sparse lexical inverted indexes.</li>
-        <li><b>Neural Reranking Pipeline</b>: Two-stage cross-encoder scoring with dynamic score normalization.</li>
-        <li><b>Sub-10ms Latency</b>: Concurrent semantic chunking and zero-copy vector scoring.</li>
-      </ul>
-      <p>
-        <img src="https://img.shields.io/badge/Orbit-Deep%20Radar-yellow?style=flat-square" />
-        <img src="https://img.shields.io/badge/Lang-Python%203.11-3776AB?style=flat-square&logo=python&logoColor=white" />
-        <img src="https://img.shields.io/badge/Retrieval-Vector%20%2B%20BM25-blue?style=flat-square" />
-      </p>
-    </td>
-  </tr>
-</table>
+I am a technical founder focused on AI systems, distributed systems, developer infrastructure, and low-level software engineering. I build software from first principles: decomposing abstractions, optimizing memory layouts, and creating deterministic, zero-dependency runtimes.
 
-<br/>
-
-<!-- ================================================================= -->
-<!-- 4. DEEP-SPACE OPEN SOURCE MISSIONS                                -->
-<!-- ================================================================= -->
-
-### 🌌 Deep-Space Open Source Missions
+<br />
 
 <table>
-  <tr>
-    <td width="50%" valign="top">
-      <h4>🛡️ <a href="https://github.com/crucible-security/crucible">Crucible Security</a>: Tool Injection Assessment Engine</h4>
-      <p><code>PR #64</code> (Issue #49) | <b>AI Red-Teaming Defense</b></p>
-      <ul>
-        <li>Built an adversarial attack module covering <b>OWASP AGENT-004 (Tool Misuse)</b> vulnerabilities across MCP-enabled agent fleets.</li>
-        <li>Engineered 4 attack classes and 20 adversarial vectors simulating privilege escalation and tool output poisoning across <b>286+ passing tests</b>.</li>
-      </ul>
-      <p>
-        <img src="https://img.shields.io/badge/Security-OWASP%20AGENT--004-red?style=flat-square" />
-        <img src="https://img.shields.io/badge/Protocol-MCP%20Trust%20Boundary-blueviolet?style=flat-square" />
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h4>🚦 <a href="https://github.com/crucible-security/crucible">Crucible Security</a>: CI/CD Security Policy Gating</h4>
-      <p><code>PR #64</code> (Issue #52) | <b>Pipeline Enforcement</b></p>
-      <ul>
-        <li>Engineered a <code>--fail-on</code> severity threshold CLI flag to block deployment pipelines when findings meet or exceed target severity (HIGH, CRITICAL).</li>
-        <li>Authored reusable GitHub Actions workflow templates for automated agent vulnerability scanning and report generation.</li>
-      </ul>
-      <p>
-        <img src="https://img.shields.io/badge/CI%2FCD-Security%20Gating-red?style=flat-square" />
-        <img src="https://img.shields.io/badge/Automation-GitHub%20Actions-blue?style=flat-square" />
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h4>🖥️ <a href="https://github.com/microsoft/openvmm">Microsoft OpenVMM</a>: VirtIO Spurious Interrupt Patch</h4>
-      <p><code>PR #4226</code> | <b>Hypervisor Transport Core</b></p>
-      <ul>
-        <li>Fixed a spurious configuration-change interrupt emitted during the <code>DRIVER_OK</code> state transition by proving driver activation does not alter device configuration.</li>
-        <li>Audited <code>INTx/MSI-X</code> and MMIO interrupt signaling paths, ensuring <code>config_generation</code> strictly increments only during <code>FEATURES_OK</code> negotiation.</li>
-      </ul>
-      <p>
-        <img src="https://img.shields.io/badge/Virtualization-VirtIO%20Core-0078D4?style=flat-square" />
-        <img src="https://img.shields.io/badge/Lang-Rust%20Kernel-DEA584?style=flat-square&logo=rust&logoColor=white" />
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h4>📦 <a href="https://github.com/youki-dev/youki">youki</a>: OCI Live Memory & Cgroups v2 Controller</h4>
-      <p><code>PR #3688</code> | <b>Container Runtime Subsystem</b></p>
-      <ul>
-        <li>Piped <code>--memory</code>, <code>--memory-reservation</code>, and <code>--memory-swap</code> through <code>LinuxMemoryBuilder</code> into the kernel cgroup controller layer.</li>
-        <li>Corrected CLI types to signed <code>Option&lt;i64&gt;</code> to safely represent <code>-1</code> unlimited allocations, adding regression integration coverage for <code>memory.max</code>.</li>
-      </ul>
-      <p>
-        <img src="https://img.shields.io/badge/Containers-OCI%20Runtime-orange?style=flat-square" />
-        <img src="https://img.shields.io/badge/Linux-Cgroups%20v2-333333?style=flat-square&logo=linux&logoColor=white" />
-      </p>
-    </td>
-  </tr>
+<tr>
+<td width="25%" align="center" bgcolor="#0A0A0A">
+<code><b>AI SYSTEMS</b></code><br />
+<small>Quantized runtimes, fused SIMD kernels, paged KV cache, MoE routing</small>
+</td>
+<td width="25%" align="center" bgcolor="#0A0A0A">
+<code><b>DISTRIBUTED SYSTEMS</b></code><br />
+<small>Raft consensus, WAL durability, tunable quorums, hybrid logical clocks</small>
+</td>
+<td width="25%" align="center" bgcolor="#0A0A0A">
+<code><b>INFRASTRUCTURE</b></code><br />
+<small>Linux internals, micro-VMs, container runtimes, deterministic simulation</small>
+</td>
+<td width="25%" align="center" bgcolor="#0A0A0A">
+<code><b>LOW-LEVEL RUNTIMES</b></code><br />
+<small>C99 / C++17 / Rust, zero-allocation hot paths, memory mapping, POSIX</small>
+</td>
+</tr>
 </table>
 
-<br/>
+---
 
-<!-- ================================================================= -->
-<!-- 5. COSMIC TECH PROPULSION MATRIX                                  -->
-<!-- ================================================================= -->
+## 02. ENGINEERING MAP
 
-### ⚙️ Cosmic Propulsion Matrix
+An interconnected view of core systems disciplines and engineering focus areas:
 
-<table width="100%">
-  <tr>
-    <td width="25%" valign="top">
-      <b>Stellar Cores</b><br/>
-      <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=c,cpp,rust,go,python,ts" alt="Languages" /></a>
-    </td>
-    <td width="25%" valign="top">
-      <b>Vector Thrusters (SIMD)</b><br/>
-      <img src="https://img.shields.io/badge/SIMD-AVX2%20%2F%20AVX512-0284c7?style=flat-square" /><br/>
-      <img src="https://img.shields.io/badge/ARM-NEON%20Intrinsics-0284c7?style=flat-square" /><br/>
-      <img src="https://img.shields.io/badge/Concurrency-OpenMP%20%2F%20pthreads-0284c7?style=flat-square" /><br/>
-      <img src="https://img.shields.io/badge/Memory-mmap%20%2F%20Zero--Alloc-0284c7?style=flat-square" />
-    </td>
-    <td width="25%" valign="top">
-      <b>Orbital Comm Arrays</b><br/>
-      <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=docker,linux,postgres,redis,git" alt="Infrastructure" /></a>
-    </td>
-    <td width="25%" valign="top">
-      <b>Flight Deck Toolchain</b><br/>
-      <a href="https://skillicons.dev"><img src="https://skillicons.dev/icons?i=cmake,githubactions,bash,vscode" alt="Toolchain" /></a>
-    </td>
-  </tr>
+<div align="center">
+<img src="assets/engineering-map.svg" alt="Engineering Topology Map" width="100%" />
+</div>
+
+---
+
+## 03. WHAT I BUILD
+
+```text
++-----------------------+-------------------------------------------------------------------------+
+| DOMAIN                | CORE FOCUS & SUB-SYSTEMS                                                |
++-----------------------+-------------------------------------------------------------------------+
+| AI INFRASTRUCTURE     | LLM runtimes, fused SIMD GEMV, quantization (Q8/Q4), sparse MoE routing |
+|                       | paged KV caches, speculative decoding, multi-index retrieval (RAG)      |
++-----------------------+-------------------------------------------------------------------------+
+| DISTRIBUTED SYSTEMS   | Raft consensus, leader election, log replication, consistent hashing   |
+|                       | quorum consistency (R+W>N), Hybrid Logical Clocks, crash recovery WAL  |
++-----------------------+-------------------------------------------------------------------------+
+| SYSTEMS PROGRAMMING   | C99, C++17, Rust, POSIX APIs, zero-copy memory mapping, memory arenas  |
+|                       | process trees, signal propagation, job control, AST execution pipelines |
++-----------------------+-------------------------------------------------------------------------+
+| NETWORKING & KERNEL   | Kernel-bypass packet filtering (eBPF/XDP), zero-copy DPDK rings         |
+|                       | custom UDP/TCP transports, network topology simulation, fault injection |
++-----------------------+-------------------------------------------------------------------------+
+| INFRASTRUCTURE        | Linux internals, micro-VM sandboxing, OCI container runtime internals   |
+|                       | deterministic simulation testing (DST), CI/CD pipelines, observability  |
++-----------------------+-------------------------------------------------------------------------+
+```
+
+---
+
+## 04. SELECTED SYSTEMS
+
+<table>
+<tr>
+<td width="50%" valign="top" bgcolor="#0A0A0A">
+
+### ◈ [`quantr-in-c`](https://github.com/bharqav/quantr-in-c)
+**Portable C99 Quantized LLM & MoE Inference Engine**
+
+High-performance contextual AI execution without Python, PyTorch, BLAS, or runtime dependencies.
+
+* **Zero Hot-Path Allocations**: Strict memory arena architecture with zero dynamic heap allocation during token generation.
+* **Fused Integer SIMD**: Vectorized GEMV kernels supporting AVX2, AVX-512 VNNI, and ARM NEON with scalar fallback.
+* **Paged KV Cache**: Quantized Q8_0 key-value memory management for unbounded context scaling.
+* **Sparse MoE Execution**: Dynamic router evaluating only active expert blocks per token.
+* **Zero-Copy Loading**: Memory-mapped checkpoints via POSIX `mmap` / Windows `MapViewOfFile`.
+
+```text
+STACK : C99 · AVX2 / AVX-512 · NEON · OpenMP · POSIX / Win32
+LINK  : github.com/bharqav/quantr-in-c
+```
+
+</td>
+<td width="50%" valign="top" bgcolor="#0A0A0A">
+
+### ◈ [`distributed-kv-store`](https://github.com/bharqav/distributed-kv-store)
+**Fault-Tolerant Distributed Persistence Engine**
+
+Clustered persistence engine built from first principles to model consensus and replication mechanics.
+
+* **Raft Consensus Protocol**: Leader election, heartbeat timers, log replication, and cluster reconfiguration.
+* **Consistent Hash Ring**: Stateless coordinator with virtual token ring for balanced distribution.
+* **Tunable Quorums**: Configurable read/write quorums (`R + W > N`) with vector clock / HLC causal ordering.
+* **Append-Only WAL**: Crash-safe Write-Ahead Logging with snapshot recovery and compaction.
+* **Deterministic Simulation**: Test harnesses verifying split-brain resistance and network partitions.
+
+```text
+STACK : Python 3.11+ / Go · Raft · Consistent Hashing · WAL · HLC
+LINK  : github.com/bharqav/distributed-kv-store
+```
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top" bgcolor="#0A0A0A">
+
+### ◈ [`mysh`](https://github.com/bharqav/mysh)
+**POSIX-Compatible Mini-Shell & Process Engine**
+
+Systems-level command interpreter and process lifecycle manager in C++17.
+
+* **Recursive-Descent Parser**: AST construction with strict operator precedence (`&&`, `||`, `|`, `;`).
+* **Process Lifecycles**: Strict management via `fork()`, `execvp()`, `waitpid()`, and process group tracking.
+* **I/O Redirections & Pipelines**: File descriptor manipulation using `pipe()` and `dup2()` chains.
+* **Job Control & Signals**: Foreground and background process execution with custom signal masking (`SIGINT`, `SIGTSTP`, `SIGCHLD`).
+* **Environment & Variable Expansion**: Deterministic variable scoping and builtin execution.
+
+```text
+STACK : C++17 · POSIX System Calls · AST · Process Management
+LINK  : github.com/bharqav/mysh
+```
+
+</td>
+<td width="50%" valign="top" bgcolor="#0A0A0A">
+
+### ◈ [`ultimate-hybrid-rag`](https://github.com/bharqav/ultimate-hybrid-rag)
+**Offline-First Multi-Index Retrieval Engine**
+
+Modular information retrieval engine combining dense, sparse, and late-interaction representations.
+
+* **Hybrid Retriever Stack**: Concurrent evaluation of Dense Vector, BM25, SPLADE, and ColBERT indexes.
+* **Reciprocal Rank Fusion**: RRF scoring across disparate rank distributions.
+* **Cross-Encoder Reranking**: Two-stage neural reranking with dynamic score normalization.
+* **Sub-10ms Latency**: Concurrent semantic chunking and zero-copy vector scoring.
+* **Reproducible Benchmarking**: Automated precision/recall gate evaluation suites.
+
+```text
+STACK : Python 3.11 · PyTorch · ColBERT · BM25 · SPLADE · RRF
+LINK  : github.com/bharqav/ultimate-hybrid-rag
+```
+
+</td>
+</tr>
 </table>
 
-<br/>
+---
 
-<!-- ================================================================= -->
-<!-- 6. SUB-SPACE COMMUNICATIONS (CONTACT & SOCIALS)                   -->
-<!-- ================================================================= -->
+## 05. OPEN SOURCE & EXTERNAL SYSTEMS
+
+Case studies of contributions and investigations in open-source systems:
+
+<table>
+<tr>
+<td width="33%" valign="top" bgcolor="#0A0A0A">
+
+#### ◈ MICROSOFT OPENVMM
+`Hypervisor / VirtIO Transport`
+
+* **Target**: Open-source virtualization infrastructure and hypervisor stack.
+* **Contribution (PR #4226)**: Fixed spurious configuration-change interrupt emitted during the `DRIVER_OK` state transition by proving driver activation does not alter device configuration.
+* **Focus**: Audited `INTx/MSI-X` and MMIO interrupt signaling paths, ensuring `config_generation` strictly increments only during `FEATURES_OK` negotiation.
+
+</td>
+<td width="33%" valign="top" bgcolor="#0A0A0A">
+
+#### ◈ CRUCIBLE SECURITY
+`AI Red-Teaming & Security Gating`
+
+* **Target**: Systems security and agent vulnerability assessment tooling.
+* **Contribution (PR #64 / Issue #49 & #52)**: Built adversarial attack module covering OWASP AGENT-004 (Tool Misuse) across MCP-enabled agent fleets (4 attack classes, 20 vectors, 286+ tests).
+* **Focus**: Engineered `--fail-on` severity threshold CLI flag for CI/CD pipelines and reusable GitHub Actions scanning workflows.
+
+</td>
+<td width="33%" valign="top" bgcolor="#0A0A0A">
+
+#### ◈ YOUKI
+`Rust OCI Container Runtime`
+
+* **Target**: Low-level container runtime implemented in Rust.
+* **Contribution (PR #3688)**: Piped `--memory`, `--memory-reservation`, and `--memory-swap` through `LinuxMemoryBuilder` into the kernel cgroup controller layer.
+* **Focus**: Corrected CLI types to signed `Option<i64>` to safely represent `-1` unlimited allocations with regression integration coverage for `memory.max`.
+
+</td>
+</tr>
+</table>
+
+---
+
+## 06. HOW I BUILD
+
+System development follows a repeatable, verification-driven engineering pipeline:
 
 <div align="center">
-  <a href="https://www.linkedin.com/in/podapatibhargav">
-    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  &nbsp;
-  <a href="mailto:bhargavpodapati28@gmail.com">
-    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-  &nbsp;
-  <a href="https://github.com/bharqav">
-    <img src="https://img.shields.io/badge/GitHub-081018?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  </a>
+<img src="assets/build-pipeline.svg" alt="Build Lifecycle Pipeline" width="100%" />
 </div>
 
-<br/>
+<br />
+
+```text
+01. EXPLORE    -> Read specifications, RFCs, kernel source, and hardware instruction manuals.
+02. DECOMPOSE  -> Break systems into stateless components, isolate mutable state, map dataflow.
+03. DESIGN     -> Define formal invariants, memory layout contracts, and concurrency models.
+04. IMPLEMENT  -> Write zero-allocation hot paths, cache-aware structs, and minimal interfaces.
+05. VALIDATE   -> Enforce bit-exact mathematical parity and automated gate ladders.
+06. BREAK      -> Inject faults, trigger simulated partitions, and test boundary conditions.
+07. MEASURE    -> Profile CPU cycles, cache miss rates, memory RSS, and tail latency percentiles.
+08. SHIP       -> Provide clean documentation, single-file amalgamations, and open-source builds.
+```
+
+---
+
+## 07. ENGINEERING PHILOSOPHY
+
+```text
+1. UNDERSTAND THE SYSTEM BEFORE ABSTRACTING IT.
+   If you cannot write the underlying component from scratch, your abstraction is a guess.
+
+2. MEASURE BEFORE OPTIMIZING.
+   Intuition is unreliable in complex runtimes. Measure cache misses, allocations, and cycle counts.
+
+3. DESIGN FAILURE PATHS BEFORE HAPPY PATHS.
+   Distributed nodes fail, memory exhaustions happen, networks partition. Systems are defined by resilience.
+
+4. PREFER EXPLICIT SYSTEMS OVER MAGIC.
+   Zero hidden allocations, zero unmapped threads, zero opaque runtime reflection.
+
+5. BUILD FROM FIRST PRINCIPLES WHEN ABSTRACTIONS HIDE CRITICAL MECHANICS.
+   When performance, determinism, or safety matter, remove intermediate layers.
+```
+
+---
+
+## 08. TECHNICAL MATRIX
+
+<table>
+<tr>
+<th align="left" bgcolor="#141414">CATEGORY</th>
+<th align="left" bgcolor="#141414">TECHNOLOGIES & DOMAINS</th>
+</tr>
+<tr>
+<td bgcolor="#0A0A0A"><b>LANGUAGES</b></td>
+<td bgcolor="#0A0A0A"><code>C (C99)</code> · <code>C++ (C++17/20)</code> · <code>Rust</code> · <code>Go</code> · <code>Python (3.11+)</code> · <code>TypeScript</code></td>
+</tr>
+<tr>
+<td bgcolor="#0A0A0A"><b>SYSTEMS & RUNTIMES</b></td>
+<td bgcolor="#0A0A0A"><code>POSIX System Calls</code> · <code>Linux Internals</code> · <code>SIMD (AVX2 / AVX-512 / NEON)</code> · <code>mmap</code> · <code>Memory Arenas</code> · <code>Process Groups</code></td>
+</tr>
+<tr>
+<td bgcolor="#0A0A0A"><b>DISTRIBUTED</b></td>
+<td bgcolor="#0A0A0A"><code>Raft Consensus</code> · <code>Write-Ahead Logging (WAL)</code> · <code>Consistent Hashing</code> · <code>Tunable Quorums</code> · <code>HLC</code></td>
+</tr>
+<tr>
+<td bgcolor="#0A0A0A"><b>AI & RETRIEVAL</b></td>
+<td bgcolor="#0A0A0A"><code>Quantization (Q8_0, Q4_K)</code> · <code>Fused GEMV</code> · <code>Sparse MoE</code> · <code>Paged KV Cache</code> · <code>ColBERT / BM25 / SPLADE / RRF</code></td>
+</tr>
+<tr>
+<td bgcolor="#0A0A0A"><b>INFRASTRUCTURE</b></td>
+<td bgcolor="#0A0A0A"><code>Linux</code> · <code>Docker / OCI</code> · <code>eBPF / XDP</code> · <code>DPDK</code> · <code>CMake / Make</code> · <code>GitHub Actions</code> · <code>PostgreSQL</code> · <code>Redis</code></td>
+</tr>
+</table>
+
+---
+
+## 09. CURRENTLY EXPLORING
+
+```text
+* Autonomous Software Engineering Agents (deterministic planning, execution, and verification loops)
+* Baremetal Inference Acceleration (integer arithmetic kernels and low-precision KV cache paging)
+* Deterministic Simulation Testing (DST for distributed protocol fuzzing and verification)
+* Micro-VM Sandboxing & Lightweight Isolation (custom isolation boundaries for untrusted execution)
+```
+
+---
+
+## 10. CONTACT / NETWORK
+
+```text
+==================================================================================================
+LET'S BUILD SOMETHING MEANINGFUL.
+==================================================================================================
+```
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=081018&height=70&section=footer" width="100%" alt="Footer Banner" />
+
+[![GitHub](https://img.shields.io/badge/GITHUB-bharqav-0A0A0A?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bharqav)
+&nbsp;
+[![LinkedIn](https://img.shields.io/badge/LINKEDIN-podapatibhargav-0A0A0A?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/podapatibhargav)
+&nbsp;
+[![Email](https://img.shields.io/badge/EMAIL-bhargavpodapati28%40gmail.com-0A0A0A?style=for-the-badge&logo=gmail&logoColor=white)](mailto:bhargavpodapati28@gmail.com)
+
 </div>
+
+<br />
+
+```text
+Systems over slogans.
+Build. Measure. Repeat.
+```
