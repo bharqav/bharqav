@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/header.gif" width="100%" alt="Bhargav - Systems and AI Infrastructure Engineer" />
+<img src="https://raw.githubusercontent.com/bharqav/bharqav/main/assets/header.gif" width="100%" alt="Bhargav - Systems and AI Infrastructure Engineer" />
 
 <img src="https://img.shields.io/badge/-C99-0A0E14?style=for-the-badge&logo=c&logoColor=00D9FF" />
 <img src="https://img.shields.io/badge/-C++-0A0E14?style=for-the-badge&logo=cplusplus&logoColor=00D9FF" />
@@ -103,7 +103,7 @@ Fixed CLI argument propagation for `--memory`, `--memory-reservation`, and `--me
 <br/>
 
 <div align="center">
-  <img src="assets/art-pixel.gif" width="480" alt="Pixel Art" />
+  <img src="https://raw.githubusercontent.com/bharqav/bharqav/main/assets/art-pixel.gif" width="480" alt="Pixel Art" />
 </div>
 
 <br/>
