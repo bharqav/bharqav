@@ -103,7 +103,7 @@ Fixed CLI argument propagation for `--memory`, `--memory-reservation`, and `--me
 <br/>
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/bharqav/bharqav/main/assets/art-pixel.gif" width="480" alt="Pixel Art" />
+  <img src="https://raw.githubusercontent.com/bharqav/bharqav/main/assets/pixel-art.gif" width="480" alt="Pixel Art" />
 </div>
 
 <br/>
