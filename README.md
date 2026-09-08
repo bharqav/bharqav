@@ -12,41 +12,45 @@
 
 <br/>
 
-<div align="center">
-  <img src="assets/terminal.svg" width="100%" alt="Terminal Boot Sequence" />
-</div>
-
-<br/>
-
 <!-- SYSINFO -->
 ```c
-/* sysinfo.c - host developer identity */
-#include <stdio.h>
+/* engine.c - baremetal compute & runtime descriptor */
 #include <stdint.h>
+#include <immintrin.h>
+#include <sys/mman.h>
 
-typedef struct {
-    const char *name;
-    const char *role;
-    const char *core_focus[4];
-    const char *current_kernel;
-    uint32_t    favorite_flags;
-} dev_t;
+typedef struct __attribute__((aligned(64))) {
+    const char *identity;           /* "bhargav // systems & infrastructure" */
+    const char *target_arch;        /* "x86_64 [avx-512 vnni] + aarch64 [neon]" */
+    
+    struct {
+        uint32_t zero_copy_hugepages : 1;  /* mmap(MAP_SHARED | MAP_HUGETLB) */
+        uint32_t fused_int4_gemv     : 1;  /* _mm512_dpbusd_epi32 tensor compute */
+        uint32_t lockfree_ring_buf   : 1;  /* single-producer multi-consumer IPC */
+        uint32_t raft_wal_sync       : 1;  /* O_DIRECT zero-amplification append */
+        uint32_t reserved            : 28;
+    } hw_caps;
 
-int main(void) {
-    dev_t me = {
-        .name           = "Bhargav",
-        .role           = "Systems & AI Infrastructure Engineer",
-        .core_focus     = { "Quantized LLM Runtimes (C99)",
-                             "Virtualization (VirtIO / OpenVMM)",
-                             "Container Runtimes (OCI / cgroups)",
-                             "Distributed Consensus (Raft)" },
-        .current_kernel = "Fused Integer GEMV on AVX2 / AVX-512 VNNI",
-        .favorite_flags = (1 << 3) /* -O3 -march=native -fopenmp -Wall -Wextra */
-    };
+    const char *active_pipeline[3];
+    uint64_t    cache_miss_budget;         /* 0x0ULL - non-negotiable */
+} compute_engine_t;
 
-    printf("%s -> %s\n", me.name, me.role);
-    return 0;
-}
+static const compute_engine_t host = {
+    .identity    = "Bhargav -> Systems & AI Infrastructure Engineer",
+    .target_arch = "x86_64 (AVX-512 VNNI) / aarch64 (NEON)",
+    .hw_caps = {
+        .zero_copy_hugepages = 1,
+        .fused_int4_gemv     = 1,
+        .lockfree_ring_buf   = 1,
+        .raft_wal_sync       = 1,
+    },
+    .active_pipeline = {
+        "Sub-200MB 30B MoE inference via memory-mapped KV paging",
+        "Lock-free ring buffers & actor IPC over POSIX shared memory",
+        "VirtIO interrupt auditing & custom kernel dispatch routines"
+    },
+    .cache_miss_budget = 0ULL
+};
 ```
 
 <br/>
