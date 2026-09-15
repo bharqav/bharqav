@@ -62,7 +62,7 @@ static const compute_engine_t host = {
 <td width="50%" valign="top">
 
 **Crucible Security** - Tool Injection Assessment Module<br/>
-`PR #64` · `Issue #49`
+[`PR #65`](https://github.com/crucible-security/crucible/pull/65) · [`Issue #49`](https://github.com/crucible-security/crucible/issues/49)
 
 Built an adversarial attack engine covering OWASP AGENT-004 across MCP and tool-augmented agents. Four attack classes, twenty adversarial vectors, 286+ passing tests with dynamic attack registration.
 
@@ -72,7 +72,7 @@ Built an adversarial attack engine covering OWASP AGENT-004 across MCP and tool-
 <td width="50%" valign="top">
 
 **Crucible Security** - CI/CD Security Gating<br/>
-`PR #64` · `Issue #52`
+[`PR #64`](https://github.com/crucible-security/crucible/pull/64) · [`Issue #52`](https://github.com/crucible-security/crucible/issues/52)
 
 Built a `--fail-on` severity threshold flag that blocks CI pipelines on HIGH/CRITICAL findings. Shipped reusable GitHub Actions templates for automated agent vulnerability scanning.
 
@@ -84,7 +84,7 @@ Built a `--fail-on` severity threshold flag that blocks CI pipelines on HIGH/CRI
 <td width="50%" valign="top">
 
 **Microsoft OpenVMM** - VirtIO Interrupt Fix<br/>
-`PR #4226`
+[`PR #4226`](https://github.com/microsoft/openvmm/pull/4226)
 
 Found and fixed a spurious config-change interrupt during the DRIVER_OK transition. Audited INTx/MSI-X/MMIO interrupt paths across transports and corrected `config_generation` increment behavior.
 
@@ -94,11 +94,33 @@ Found and fixed a spurious config-change interrupt during the DRIVER_OK transiti
 <td width="50%" valign="top">
 
 **youki (OCI Runtime)** - Live Memory & cgroups v2<br/>
-`PR #3688`
+[`PR #3688`](https://github.com/youki-dev/youki/pull/3688)
 
 Fixed CLI argument propagation for `--memory`, `--memory-reservation`, and `--memory-swap` into the kernel cgroup layer. Corrected types to signed `Option<i64>` for unlimited allocations, added regression coverage.
 
 `Rust` `cgroups` `OCI`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+**NVIDIA NodeWright** - Lifecycle Drain Observability<br/>
+[`PR #582`](https://github.com/NVIDIA/nodewright/pull/582) · [`Issue #542`](https://github.com/NVIDIA/nodewright/issues/542)
+
+Surfaced `Blocked` status conditions and transition-guarded warning events when non-interruptible workloads hold pre-drain barriers. Resolved condition-flapping bugs across reconciles and documented barrier semantics.
+
+`Go` `Kubernetes` `Operators`
+
+</td>
+<td width="50%" valign="top">
+
+**PyTorch ExecuTorch** - Runtime Metadata Segfault Fix<br/>
+[`PR #22405`](https://github.com/pytorch/executorch/pull/22405) · [`Issue #22404`](https://github.com/pytorch/executorch/issues/22404)
+
+Fixed a null pointer dereference in `MethodMeta::uses_backend()` when schema-optional FlatBuffer delegates are unset. Restored CMake fixture generation, re-enabled upstream `method_meta_test`, and synced Buck targets.
+
+`C++` `FlatBuffers` `Runtime`
 
 </td>
 </tr>
@@ -118,7 +140,7 @@ Fixed CLI argument propagation for `--memory`, `--memory-reservation`, and `--me
 <tr>
 <td width="50%" valign="top">
 
-### ⚡ quantr-in-c
+### ⚡ [quantr-in-c](https://github.com/bharqav/quantr-in-c)
 Zero-dependency quantized LLM/MoE inference in portable C99.
 
 - Fused SIMD GEMV using `_mm256_maddubs_epi16` and `_mm512_dpbusd_epi32`
@@ -128,7 +150,7 @@ Zero-dependency quantized LLM/MoE inference in portable C99.
 </td>
 <td width="50%" valign="top">
 
-### 🐚 mysh
+### 🐚 [mysh](https://github.com/bharqav/mysh)
 Production-grade POSIX mini-shell in C++.
 
 - Recursive AST parser for pipelines, subshells, redirection
@@ -140,7 +162,7 @@ Production-grade POSIX mini-shell in C++.
 <tr>
 <td width="50%" valign="top">
 
-### 📦 distributed-kv-store
+### 📦 [distributed-kv-store](https://github.com/bharqav/distributed-kv-store)
 Fault-tolerant distributed KV store from first principles.
 
 - Raft consensus: leader election, log replication, snapshotting
@@ -150,12 +172,49 @@ Fault-tolerant distributed KV store from first principles.
 </td>
 <td width="50%" valign="top">
 
-### 🔍 ultimate-hybrid-rag
+### 🔍 [ultimate-hybrid-rag](https://github.com/bharqav/ultimate-hybrid-rag)
 High-throughput hybrid vector and lexical retrieval engine.
 
 - RRF fusion of dense embeddings and BM25 sparse indexes
 - Cross-encoder neural reranking pipeline
 - Sub-10ms latency on concurrent semantic chunking
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🎬 [tiny-video-diffusion](https://github.com/bharqav/tiny-video-diffusion)
+Efficient text-to-video latent diffusion built from scratch.
+
+- VideoDiT + VideoVAE with zero-init temporal attention
+- DPM-Solver++ scheduler and standalone C++ DDIM runtime
+- Faster-than-real-time CPU generation (RTF 0.17 on 8-frame clips)
+
+</td>
+<td width="50%" valign="top">
+
+### 📡 [oemn](https://github.com/bharqav/oemn)
+Offline Emergency Mesh Network in C11 over UDP.
+
+- Multi-hop Dijkstra shortest-path routing with binary min-heap
+- AES-256-GCM / ChaCha20-Poly1305 and sliding-window replay protection
+- Graceful degradation under 40% loss, sub-4s network reconvergence
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 🎨 [tiny-diffusion](https://github.com/bharqav/tiny-diffusion)
+CPU-native latent diffusion system built from scratch.
+
+- Compact DiT and VAE architectures with Classifier-Free Guidance
+- Zero-dependency standalone C++17 inference runtime
+- 1,000-image procedural verification gallery with full reproducibility
+
+</td>
+<td width="50%" valign="top">
 
 </td>
 </tr>
