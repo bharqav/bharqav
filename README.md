@@ -216,6 +216,13 @@ CPU-native latent diffusion system built from scratch.
 </td>
 <td width="50%" valign="top">
 
+### 🧠 [SovereignGrad](https://github.com/bharqav/soverign-grad)
+Zero-dependency C++17 tensor and deep learning framework built from scratch.
+
+- Dynamic reverse-mode autograd DAG with in-place mutation version guards
+- AVX2/FMA cache-blocked microkernels and CUDA register-tiled GEMM
+- Finite-difference gradchecks over every operator, CPU and emulated CUDA backends
+
 </td>
 </tr>
 </table>
