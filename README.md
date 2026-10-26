@@ -124,6 +124,40 @@ Fixed a null pointer dereference in `MethodMeta::uses_backend()` when schema-opt
 
 </td>
 </tr>
+<tr>
+<td width="50%" valign="top">
+
+**neo4j/neo4j** - Cypher Slotted Runtime Crash<br/>
+[`PR #13982`](https://github.com/neo4j/neo4j/pull/13982) · [`Issue #13981`](https://github.com/neo4j/neo4j/issues/13981)
+
+Fixed a production-crashing `ArrayIndexOutOfBoundsException` where `CartesianProduct` plans deduplicated a variable slot bound on both sides, undercounting the reserved slot array. Reproduced from source, added a defensive duplicate-slot reservation plus Cypher 5/25 regression tests, and validated 5,500+ tests with zero regressions.
+
+`Java` `Scala` `Cypher` `Query Engine`
+
+</td>
+<td width="50%" valign="top">
+
+**Hugging Face optimum-intel** - OpenVINO Spark2.5 Export<br/>
+[`PR #2008`](https://github.com/huggingface/optimum-intel/pull/2008) · [`Issue #2003`](https://github.com/huggingface/optimum-intel/issues/2003)
+
+Added OpenVINO export support for the `spark2_5` architecture with hybrid sliding-window/full attention, dual RoPE bases, and gated GQA. Isolated a bfloat16 precision discrepancy to OpenVINO's default CPU inference hint, derived a CI tolerance from measured error scaling, and published a Hub test checkpoint.
+
+`Python` `OpenVINO` `Transformers`
+
+</td>
+</tr>
+<tr>
+<td width="100%" colspan="2" valign="top">
+
+**Meta Watchman** - Recrawl Backoff<br/>
+[`PR #1362`](https://github.com/facebook/watchman/pull/1362) · [`Issue #1354`](https://github.com/facebook/watchman/issues/1354)
+
+Fixed an unbounded recrawl loop that consumed continuous CPU (~14,000 recrawls in 19 minutes) after repeated FSEvents kernel drops. Added a bounded exponential backoff policy with a configurable 10s cap and sliced sleeping, plus 7 unit tests; a 60s stress run cut crawls ~98% and daemon CPU ~95%.
+
+`C++` `Watchman` `Systems`
+
+</td>
+</tr>
 </table>
 
 <br/>
@@ -222,6 +256,18 @@ Zero-dependency C++17 tensor and deep learning framework built from scratch.
 - Dynamic reverse-mode autograd DAG with in-place mutation version guards
 - AVX2/FMA cache-blocked microkernels and CUDA register-tiled GEMM
 - Finite-difference gradchecks over every operator, CPU and emulated CUDA backends
+
+</td>
+</tr>
+<tr>
+<td width="100%" colspan="2" valign="top">
+
+### 🔬 [mini-jepa](https://github.com/bharqav/mini-jepa)
+Order-invariant decision models and a JEPA-style latent predictor on a truncated Qwen3 backbone.
+
+- Zero-token single-forward-pass scoring with near-exact candidate-order invariance
+- EMA target encoder with block masking, latent predictor, and VICReg collapse terms
+- Calibrated probabilities, bootstrap CIs, and FastAPI serving with OOM backoff
 
 </td>
 </tr>
