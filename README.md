@@ -297,21 +297,10 @@ Order-invariant decision models and a JEPA-style latent predictor on a truncated
 
 </div>
 
-<br/>
-
-## Currently Deep-Diving Into
-
-- **Speculative decoding acceptance proofs** - optimizing rejection sampling across batched draft verification steps
-- **Zero-copy memory-mapped weight paging** - eliminating page-fault penalties on sparse 30B MoE models under DRAM constraints
-- **Lock-free ring buffers and actor models** - low-latency IPC over POSIX shared memory
-
-<br/>
-
 <div align="center">
 
 <a href="https://linkedin.com/in/podapatibhargav"><img src="https://img.shields.io/badge/-LinkedIn-0A0E14?style=for-the-badge&logo=linkedin&logoColor=00D9FF" /></a>
 <a href="mailto:bhargavpodapati28@gmail.com"><img src="https://img.shields.io/badge/-Email-0A0E14?style=for-the-badge&logo=gmail&logoColor=00D9FF" /></a>
-<a href="https://github.com/bharqav"><img src="https://img.shields.io/badge/-GitHub-0A0E14?style=for-the-badge&logo=github&logoColor=00D9FF" /></a>
 
 <br/><br/>
 
